@@ -154,6 +154,7 @@
             this.Exit.Size = new System.Drawing.Size(41, 38);
             this.Exit.TabIndex = 1;
             this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Login
             // 

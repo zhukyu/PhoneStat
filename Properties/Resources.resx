@@ -124,6 +124,9 @@
   <data name="icons8_maximize_button_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_maximize_button_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="65756" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\65756.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_maximize_button_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_maximize_button_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,7 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="65756" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\65756.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2174912" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2174912.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

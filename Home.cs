@@ -87,17 +87,26 @@ namespace PhoneStat
             LinkLabel click = (LinkLabel)sender;
             click.LinkVisited = true;
         }
-        private void ContentPnl_Add(Control c)
-        {
-            ContentPnl.Controls.Add(c);
-        }
         private void PhoneEditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (PhoneEditLink.LinkVisited == true)
-                return;
-            SelectButton(PhoneEditLink, new EventArgs());
-            PhoneEdit phoneEdit = new PhoneEdit();
-            ContentPnl_Add(phoneEdit);
+            if(Program.isLoggedIn == false)
+            {
+                LoginHandle();
+                if(Program.isLoggedIn == true)
+                {
+                    SelectButton(PhoneEditLink, new EventArgs());
+                    PhoneEdit phoneEdit = new PhoneEdit();
+                    ContentPnl.Controls.Add(phoneEdit);
+                }
+            }
+            else
+            {
+                if (PhoneEditLink.LinkVisited == true)
+                    return;
+                SelectButton(PhoneEditLink, new EventArgs());
+                PhoneEdit phoneEdit = new PhoneEdit();
+                ContentPnl.Controls.Add(phoneEdit);
+            }
         }
 
         private void PhoneListLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -106,7 +115,7 @@ namespace PhoneStat
                 return;
             SelectButton(PhoneListLink, new EventArgs());
             PhoneList phoneList = new PhoneList();
-            ContentPnl_Add(phoneList);
+            ContentPnl.Controls.Add(phoneList);
         }
 
         private void ContentPnl_Paint(object sender, PaintEventArgs e)
@@ -115,22 +124,23 @@ namespace PhoneStat
         }
         private void LoginHandle()
         {
-            LoginLink.Hide();
-            LogOutLink.Show();
-            UserNameLabel.Show();
+            Login login = new Login();
+            login.ShowDialog();
+            if(Program.isLoggedIn == true)
+            {
+                LoginLink.Hide();
+                LogOutLink.Show();
+                UserNameLabel.Show();
+            }
         }
         private void LoginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login login = new Login();
-            login.ShowDialog();
+            
             LoginHandle();
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-            SelectButton(PhoneListLink, new EventArgs());
-            PhoneList phoneList = new PhoneList();
-            ContentPnl_Add(phoneList);
         }
 
         private void LogOutBtn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -139,6 +149,10 @@ namespace PhoneStat
             LoginLink.Show();
             LogOutLink.Hide();
             UserNameLabel.Hide();
+            if(PhoneEditLink.LinkVisited == true)
+            {
+                PhoneListLink_LinkClicked(sender, null);
+            }
         }
     }
 }

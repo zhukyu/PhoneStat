@@ -32,6 +32,7 @@
             this.Minimize = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.ContentPnl = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.control = new System.Windows.Forms.Panel();
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.LoginLink = new System.Windows.Forms.LinkLabel();
@@ -43,6 +44,8 @@
             this.PhoneEditLink = new System.Windows.Forms.LinkLabel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            this.ContentPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.control.SuspendLayout();
             this.Dashboard.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -94,12 +97,24 @@
             // 
             this.ContentPnl.BackColor = System.Drawing.Color.White;
             this.ContentPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContentPnl.Controls.Add(this.pictureBox1);
             this.ContentPnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPnl.Location = new System.Drawing.Point(0, 113);
             this.ContentPnl.Name = "ContentPnl";
             this.ContentPnl.Size = new System.Drawing.Size(1247, 696);
             this.ContentPnl.TabIndex = 2;
             this.ContentPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPnl_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::PhoneStat.Properties.Resources._2174912;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1247, 696);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // control
             // 
@@ -121,7 +136,7 @@
             this.UserNameLabel.AutoSize = true;
             this.UserNameLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UserNameLabel.ForeColor = System.Drawing.Color.White;
-            this.UserNameLabel.Location = new System.Drawing.Point(939, 58);
+            this.UserNameLabel.Location = new System.Drawing.Point(971, 58);
             this.UserNameLabel.Name = "UserNameLabel";
             this.UserNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.UserNameLabel.Size = new System.Drawing.Size(250, 24);
@@ -264,6 +279,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            this.ContentPnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.control.ResumeLayout(false);
             this.control.PerformLayout();
             this.Dashboard.ResumeLayout(false);
@@ -288,5 +305,6 @@
         private System.Windows.Forms.LinkLabel LoginLink;
         private System.Windows.Forms.LinkLabel LogOutLink;
         private System.Windows.Forms.Label UserNameLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
