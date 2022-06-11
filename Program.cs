@@ -9,7 +9,8 @@ namespace PhoneStat
     internal static class Program
     {
         internal static bool isLoggedIn = false;
-        internal static string conStr = "";
+        internal static string conStr = @"Data Source=DESKTOP-MLARCTC\MSSQLSERVER01;Initial Catalog=PhoneDb;Integrated Security=True";
+        //bruh sao k gan vao day
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

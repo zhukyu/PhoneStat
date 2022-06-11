@@ -18,7 +18,7 @@ namespace PhoneStat
         bool hasSDCard { get; set; }
         int battery { get; set; }
         string resolution { get; set; }
-        int displaySize { get; set; }
+        float displaySize { get; set; }
         int refreshRate { get; set; }
         int cameraResolution { get; set; }
         int frontCameraResolution  { get; set; }

@@ -358,6 +358,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(599, 368);
             this.panel13.TabIndex = 6;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
             // 
             // DeleteImgBtn
             // 
@@ -426,6 +427,7 @@
             this.NameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NameTextBox.Size = new System.Drawing.Size(330, 30);
             this.NameTextBox.TabIndex = 1;
+            this.NameTextBox.TextChanged += new System.EventHandler(this.NameTextBox_TextChanged);
             // 
             // panel6
             // 

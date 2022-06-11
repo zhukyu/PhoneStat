@@ -8,15 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace PhoneStat
 {
     public partial class AddPhone : Form
     {
+        SqlConnection conn = null;
+        SqlCommand cmd;
+        string conStr = @"Data Source=DESKTOP-MLARCTC\MSSQLSERVER01;Initial Catalog=PhoneDb;Integrated Security=True";
         string convertedByteStr = "";
         string filePath = "";
-        public AddPhone()
+        private object command;
+
+        public  AddPhone()
         {
+
             InitializeComponent();
         }
         private byte[] converImgToByte()
@@ -62,6 +70,53 @@ namespace PhoneStat
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dlr = MessageBox.Show("Bạn có muốn thêm điệm thoại này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                try
+                {
+                    if (conn == null)
+                    {
+                        conn = new SqlConnection(Program.conStr);
+                    }
+                    if (conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.CommandType = CommandType.Text;
+                    //cmd = conn.CreateCommand();
+                    //câu này sai r này
+                    // insert into Phone (tên trường) values (...) tu lam di hi =))
+                    cmd.CommandText = "insert into Phone(name, brand, chipset, RAM, ROM, hasSDCard, battery, resolution, displaySize, refreshRate, cameraResolution, frontCameraResolution, image) values (N'" + NameTextBox.Text + "',N'" + BrandTextBox.Text + "', N'" + ChipsetTextBox.Text + "','" + RAMTextBox.Text + "', '" + ROMTextBox.Text + "','" + HasSDCardTextBox.Text + "'" +
+                        ",'" + BatteryTextBox.Text + "',N'" + ResolutionTextBox.Text + "','" + DisplaySizeTextBox.Text + "','" + RefreshRateTextBox.Text + "','" + CameraResolutionTextBox.Text + "', '" + FrontCameraResolutionTextBox.Text + "', '"+convertedByteStr+"')";
+                    cmd.Connection = conn;
+                    int ret = cmd.ExecuteNonQuery();
+                    if(ret > 0)
+                    {
+                        MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }   
+                    else
+                    {
+                        MessageBox.Show("Lỗi xảy ra!");
+                    }    
+                }
+                catch (Exception ex)
+                {
+                   MessageBox.Show("Lỗi xảy ra!"+ ex.Message);
+                }
+            }
+        }
+
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
         {
 
         }
