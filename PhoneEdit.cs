@@ -12,28 +12,84 @@ namespace PhoneStat
 {
     public partial class PhoneEdit : UserControl
     {
+        List<Phone> phones;
         public PhoneEdit()
         {
             InitializeComponent();
+            phones = InteractDB.GetData();
         }
 
-        private void UserControl1_Load(object sender, EventArgs e)
+        private void PhoneEdit_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
+            foreach (Phone phone in phones)
+            {
+                PhoneDGV.Rows.Add(
+                    phone.ID.ToString(),
+                    phone.name,
+                    phone.brand,
+                    phone.chipset,
+                    phone.RAM,
+                    phone.ROM,
+                    phone.hasSDCard,
+                    phone.battery,
+                    phone.resolution,
+                    phone.displaySize,
+                    phone.refreshRate,
+                    phone.cameraResolution,
+                    phone.frontCameraResolution,
+                    phone.image
+                );
+            }
         }
+        private void ReloadDGV()
+        {
+            phones = InteractDB.GetData();
+            PhoneDGV.Rows.Clear();
+            PhoneEdit_Load(new Object(), new EventArgs());
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        }
+        private void AddLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AddPhone addPhone = new AddPhone();
             addPhone.ShowDialog();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void EditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Phone phone = phones[PhoneDGV.CurrentCell.RowIndex];
+            UpdatePhone updatePhone = new UpdatePhone(phone);
+            updatePhone.ShowDialog();
+            ReloadDGV(); 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void DeleteLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult dlr = MessageBox.Show("Bạn có muốn xóa điện thoại này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                try
+                {
+                    int ID = phones[PhoneDGV.CurrentCell.RowIndex].ID;
+                    int ret = InteractDB.DeleteData(ID);
+                    if (ret > 0)
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        throw new Exception("Không thể xóa!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                ReloadDGV();
+            }
+        }
+
+        private void PhoneDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

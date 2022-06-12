@@ -3,46 +3,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 
 namespace PhoneStat
 {
     public partial class AddPhone : Form
     {
-        SqlConnection conn = null;
-        SqlCommand cmd;
-        string conStr = @"Data Source=DESKTOP-MLARCTC\MSSQLSERVER01;Initial Catalog=PhoneDb;Integrated Security=True";
-        string convertedByteStr = "";
-        string filePath = "";
-        private object command;
+        Image? phoneImage;
 
         public  AddPhone()
         {
 
             InitializeComponent();
-        }
-        private byte[] converImgToByte()
-        {
-            FileStream fs;
-            fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            byte[] picbyte = new byte[fs.Length];
-            fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
-            fs.Close();
-            return picbyte;
-        }
-        private Image ByteToImg(string byteString)
-        {
-            byte[] imgBytes = Convert.FromBase64String(byteString);
-            MemoryStream ms = new MemoryStream(imgBytes, 0, imgBytes.Length);
-            ms.Write(imgBytes, 0, imgBytes.Length);
-            Image image = Image.FromStream(ms, true);
-            return image;
         }
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -57,55 +33,45 @@ namespace PhoneStat
             openFile.RestoreDirectory = true;
             if (openFile.ShowDialog() == DialogResult.OK)
             {
-                filePath = openFile.FileName;
-                convertedByteStr = Convert.ToBase64String(converImgToByte());
-                PhoneImage.Image = ByteToImg(convertedByteStr);
+                phoneImage = new Bitmap(openFile.FileName);
+                PhoneImage.Image = phoneImage;
             }
         }
         private void DeleteImgBtn_Click(object sender, EventArgs e)
         {
-            filePath = "";
-            convertedByteStr = "";
+            phoneImage = null;
             PhoneImage.Image = Properties.Resources._65756;
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn có muốn thêm điệm thoại này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dlr = MessageBox.Show("Bạn có muốn thêm điện thoại này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
                 try
                 {
-                    if (conn == null)
-                    {
-                        conn = new SqlConnection(Program.conStr);
-                    }
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-                    }
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.CommandType = CommandType.Text;
-                    //cmd = conn.CreateCommand();
-                    //câu này sai r này
-                    // insert into Phone (tên trường) values (...) tu lam di hi =))
-                    cmd.CommandText = "insert into Phone(name, brand, chipset, RAM, ROM, hasSDCard, battery, resolution, displaySize, refreshRate, cameraResolution, frontCameraResolution, image) values (N'" + NameTextBox.Text + "',N'" + BrandTextBox.Text + "', N'" + ChipsetTextBox.Text + "','" + RAMTextBox.Text + "', '" + ROMTextBox.Text + "','" + HasSDCardTextBox.Text + "'" +
-                        ",'" + BatteryTextBox.Text + "',N'" + ResolutionTextBox.Text + "','" + DisplaySizeTextBox.Text + "','" + RefreshRateTextBox.Text + "','" + CameraResolutionTextBox.Text + "', '" + FrontCameraResolutionTextBox.Text + "', '"+convertedByteStr+"')";
-                    cmd.Connection = conn;
-                    int ret = cmd.ExecuteNonQuery();
+                    //if (NameTextBox.Text == "" || BrandTextBox.Text == "" || ChipsetTextBox.Text == "" || RAMTextBox.Text == "" || ROMTextBox.Text == "" || HasSDCardTextBox.Text == "" || BatteryTextBox.Text == "" ||
+                    //    ResolutionTextBox.Text == "" || DisplaySizeTextBox.Text == "" || RefreshRateTextBox.Text == "" || CameraResolutionTextBox.Text == "" || FrontCameraResolutionTextBox.Text == "")
+                    if(NameTextBox.Text == "")  
+                        throw new Exception("Tên điện thoại không được để trống!");
+                    Phone phone = new Phone(
+                        -1, NameTextBox.Text, BrandTextBox.Text, ChipsetTextBox.Text, RAMTextBox.Text, ROMTextBox.Text, HasSDCardTextBox.Text, BatteryTextBox.Text,
+                        ResolutionTextBox.Text, DisplaySizeTextBox.Text, RefreshRateTextBox.Text, CameraResolutionTextBox.Text, FrontCameraResolutionTextBox.Text, phoneImage
+                    );
+                    int ret = InteractDB.InsertData(phone);
                     if(ret > 0)
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
-                    }   
+                    } 
                     else
                     {
-                        MessageBox.Show("Lỗi xảy ra!");
+                        throw new Exception("Không thể thêm!");
                     }    
                 }
                 catch (Exception ex)
                 {
-                   MessageBox.Show("Lỗi xảy ra!"+ ex.Message);
+                    MessageBox.Show(ex.Message.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

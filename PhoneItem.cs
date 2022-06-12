@@ -13,13 +13,16 @@ namespace PhoneStat
     public partial class PhoneItem : UserControl
     {
         Phone phone;
-        public PhoneItem()
+        public PhoneItem(Phone phone)
         {
             InitializeComponent();
+            this.phone = phone;
+            PhoneName.Text = phone.name;
+            PhoneImg.Image = phone.image;
         }
         private void guna2Panel1_MouseEnter(object sender, EventArgs e)
         {
-            this.phoneImg.Location = new Point(0, 10);
+            this.PhoneImg.Location = new Point(0, 10);
         }
 
         private void guna2Panel1_MouseLeave(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace PhoneStat
                 return;
             else
             {
-                this.phoneImg.Location = new Point(0, 22);
+                this.PhoneImg.Location = new Point(0, 22);
             }
         }
         protected override void OnMouseLeave(EventArgs e)
@@ -38,12 +41,16 @@ namespace PhoneStat
                 return;
             else
             {
-                this.phoneImg.Location = new Point(0, 22);
+                this.PhoneImg.Location = new Point(0, 22);
             }
         }
-
+        private void PhoneImg_MouseEnter(object sender, EventArgs e)
+        {
+            this.PhoneImg.Location = new Point(0, 10);
+        }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.PhoneImg.Location = new Point(0, 22);
             PhoneDetail phoneDetail = new PhoneDetail(phone);
             phoneDetail.ShowDialog();
         }

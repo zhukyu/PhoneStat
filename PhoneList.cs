@@ -12,28 +12,21 @@ namespace PhoneStat
 {
     public partial class PhoneList : UserControl
     {
+        List<Phone> phones;
         public PhoneList()
         {
             InitializeComponent();
+            phones = InteractDB.GetData();
         }
 
         private void FLow_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
-            PhoneItem product = new PhoneItem();
-            PhoneItem product1 = new PhoneItem();
-            PhoneItem product2 = new PhoneItem();
-            PhoneItem product3 = new PhoneItem();
-            PhoneItem product4 = new PhoneItem();
-            PhoneItem product5 = new PhoneItem();
-            PhoneItem product6 = new PhoneItem();
-            flowLayoutPanel1.Controls.Add(product);
-            flowLayoutPanel1.Controls.Add(product1);
-            flowLayoutPanel1.Controls.Add(product2);
-            flowLayoutPanel1.Controls.Add(product3);
-            flowLayoutPanel1.Controls.Add(product4);
-            flowLayoutPanel1.Controls.Add(product5);
-            flowLayoutPanel1.Controls.Add(product6);    
+            foreach (Phone phone in phones)
+            {
+                PhoneItem phoneItem = new PhoneItem(phone);
+                flowLayoutPanel1.Controls.Add(phoneItem);
+            }
         }
     }
 }
