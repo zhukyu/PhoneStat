@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,24 +10,24 @@ namespace PhoneStat
 {
     public class Phone
     {
-        int ID { get; set; }
-        string name { get; set; }
-        string brand { get; set; }
-        string chipset { get; set; }
-        int RAM { get; set; }
-        int ROM { get; set; }
-        bool hasSDCard { get; set; }
-        int battery { get; set; }
-        string resolution { get; set; }
-        float displaySize { get; set; }
-        int refreshRate { get; set; }
-        int cameraResolution { get; set; }
-        int frontCameraResolution  { get; set; }
-        Image image { get; set; }
+        internal int ID { get; set; }
+        internal string name { get; set; }
+        internal string brand { get; set; }
+        internal string chipset { get; set; }
+        internal string RAM { get; set; }
+        internal string ROM { get; set; }
+        internal string hasSDCard { get; set; }
+        internal string battery { get; set; }
+        internal string resolution { get; set; }
+        internal string displaySize { get; set; }
+        internal string refreshRate { get; set; }
+        internal string cameraResolution { get; set; }
+        internal string frontCameraResolution  { get; set; }
+        internal Image image { get; set; }
 
-        public Phone(int iD, string name, string brand, string chipset, int RAM, int ROM, bool hasSDCard, int battery, string resolution, int displaySize, int refreshRate, int cameraResolution, int frontCameraResolution, Image image)
+        public Phone(int ID, string name, string brand, string chipset, string RAM, string ROM, string hasSDCard, string battery, string resolution, string displaySize, string refreshRate, string cameraResolution, string frontCameraResolution, Image image)
         {
-            ID = iD;
+            this.ID = ID;
             this.name = name;
             this.brand = brand;
             this.chipset = chipset;

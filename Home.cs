@@ -140,7 +140,7 @@ namespace PhoneStat
         }
 
         private void Home_Load(object sender, EventArgs e)
-        {
+        {   
         }
 
         private void LogOutBtn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -151,7 +151,7 @@ namespace PhoneStat
             UserNameLabel.Hide();
             if(PhoneEditLink.LinkVisited == true)
             {
-                PhoneListLink_LinkClicked(sender, null);
+                PhoneListLink_LinkClicked(sender, e);
             }
         }
     }

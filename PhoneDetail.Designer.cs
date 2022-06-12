@@ -30,6 +30,8 @@
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.PhoneImage = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.NameTextBox = new System.Windows.Forms.TextBox();
@@ -67,10 +69,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.FrontCameraResolutionTextBox = new System.Windows.Forms.TextBox();
             this.Exit = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.PhoneImage = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -83,8 +85,6 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -122,6 +122,24 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(631, 618);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.PhoneImage);
+            this.panel13.Location = new System.Drawing.Point(3, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(599, 297);
+            this.panel13.TabIndex = 7;
+            // 
+            // PhoneImage
+            // 
+            this.PhoneImage.Image = global::PhoneStat.Properties.Resources._65756;
+            this.PhoneImage.Location = new System.Drawing.Point(189, 12);
+            this.PhoneImage.Name = "PhoneImage";
+            this.PhoneImage.Size = new System.Drawing.Size(232, 272);
+            this.PhoneImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PhoneImage.TabIndex = 0;
+            this.PhoneImage.TabStop = false;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label8);
@@ -153,6 +171,7 @@
             this.NameTextBox.ReadOnly = true;
             this.NameTextBox.Size = new System.Drawing.Size(346, 23);
             this.NameTextBox.TabIndex = 1;
+            this.NameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel6
             // 
@@ -185,6 +204,7 @@
             this.BrandTextBox.ReadOnly = true;
             this.BrandTextBox.Size = new System.Drawing.Size(346, 23);
             this.BrandTextBox.TabIndex = 1;
+            this.BrandTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel5
             // 
@@ -217,6 +237,7 @@
             this.ChipsetTextBox.ReadOnly = true;
             this.ChipsetTextBox.Size = new System.Drawing.Size(346, 23);
             this.ChipsetTextBox.TabIndex = 1;
+            this.ChipsetTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel4
             // 
@@ -249,6 +270,7 @@
             this.RAMTextBox.ReadOnly = true;
             this.RAMTextBox.Size = new System.Drawing.Size(346, 23);
             this.RAMTextBox.TabIndex = 1;
+            this.RAMTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel3
             // 
@@ -281,6 +303,7 @@
             this.ROMTextBox.ReadOnly = true;
             this.ROMTextBox.Size = new System.Drawing.Size(346, 23);
             this.ROMTextBox.TabIndex = 1;
+            this.ROMTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -313,6 +336,7 @@
             this.HasSDCardTextBox.ReadOnly = true;
             this.HasSDCardTextBox.Size = new System.Drawing.Size(346, 23);
             this.HasSDCardTextBox.TabIndex = 1;
+            this.HasSDCardTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
             // 
@@ -345,6 +369,7 @@
             this.BatteryTextBox.ReadOnly = true;
             this.BatteryTextBox.Size = new System.Drawing.Size(346, 23);
             this.BatteryTextBox.TabIndex = 1;
+            this.BatteryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // nameField
             // 
@@ -377,6 +402,7 @@
             this.ResolutionTextBox.ReadOnly = true;
             this.ResolutionTextBox.Size = new System.Drawing.Size(346, 23);
             this.ResolutionTextBox.TabIndex = 1;
+            this.ResolutionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel8
             // 
@@ -409,6 +435,7 @@
             this.DisplaySizeTextBox.ReadOnly = true;
             this.DisplaySizeTextBox.Size = new System.Drawing.Size(346, 23);
             this.DisplaySizeTextBox.TabIndex = 1;
+            this.DisplaySizeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel9
             // 
@@ -441,6 +468,7 @@
             this.RefreshRateTextBox.ReadOnly = true;
             this.RefreshRateTextBox.Size = new System.Drawing.Size(346, 23);
             this.RefreshRateTextBox.TabIndex = 1;
+            this.RefreshRateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel10
             // 
@@ -473,6 +501,7 @@
             this.CameraResolutionTextBox.ReadOnly = true;
             this.CameraResolutionTextBox.Size = new System.Drawing.Size(288, 23);
             this.CameraResolutionTextBox.TabIndex = 1;
+            this.CameraResolutionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel11
             // 
@@ -505,6 +534,7 @@
             this.FrontCameraResolutionTextBox.ReadOnly = true;
             this.FrontCameraResolutionTextBox.Size = new System.Drawing.Size(288, 23);
             this.FrontCameraResolutionTextBox.TabIndex = 1;
+            this.FrontCameraResolutionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Exit
             // 
@@ -523,24 +553,6 @@
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.PhoneImage);
-            this.panel13.Location = new System.Drawing.Point(3, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(599, 297);
-            this.panel13.TabIndex = 7;
-            // 
-            // PhoneImage
-            // 
-            this.PhoneImage.Image = global::PhoneStat.Properties.Resources._65756;
-            this.PhoneImage.Location = new System.Drawing.Point(189, 12);
-            this.PhoneImage.Name = "PhoneImage";
-            this.PhoneImage.Size = new System.Drawing.Size(232, 272);
-            this.PhoneImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PhoneImage.TabIndex = 0;
-            this.PhoneImage.TabStop = false;
-            // 
             // PhoneDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -555,6 +567,8 @@
             this.Load += new System.EventHandler(this.PhoneDetail_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -579,8 +593,6 @@
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PhoneImage)).EndInit();
             this.ResumeLayout(false);
 
         }
