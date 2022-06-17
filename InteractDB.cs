@@ -110,5 +110,39 @@ namespace PhoneStat
             }
             return phoneList;
         }
+
+        public static List<Phone> SearchPhone(string temp)
+        {
+            List<Phone> phoneList = new List<Phone>();
+            SqlConnection conn = new SqlConnection(Program.conStr);
+            conn.Open();
+            string query = "select * from Phone where " +
+                $"name like '%{temp}%'"; 
+          
+            SqlCommand cmd = new SqlCommand(query,conn);
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                Image image = ByteToImg(rd.GetString(13));
+                Phone phone = new Phone(
+                    rd.GetInt32(0),
+                    rd.GetString(1),
+                    rd.GetString(2),
+                    rd.GetString(3),
+                    rd.GetString(4),
+                    rd.GetString(5),
+                    rd.GetString(6),
+                    rd.GetString(7),
+                    rd.GetString(8),
+                    rd.GetString(9),
+                    rd.GetString(10),
+                    rd.GetString(11),
+                    rd.GetString(12),
+                    image
+                );
+                phoneList.Add(phone);
+            }
+            return phoneList;
+        }
     }
 }

@@ -154,5 +154,51 @@ namespace PhoneStat
                 PhoneListLink_LinkClicked(sender, e);
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (tbSearch.Text != "")
+                {
+                    ClearContent();
+
+                    string temp = tbSearch.Text;
+                    if (PhoneListLink.LinkVisited == true)
+                    {
+                        MessageBox.Show("1");
+                        PhoneList phoneList = new PhoneList(temp);
+                        ContentPnl.Controls.Add(phoneList);
+                    }
+                    else if(PhoneEditLink.LinkVisited == true)
+                    {
+                        MessageBox.Show("2");
+                        PhoneEdit phoneList = new PhoneEdit(temp);
+                        ContentPnl.Controls.Add(phoneList);
+                    }
+                    else
+                    {
+                        MessageBox.Show("3");
+                        PhoneList phoneList = new PhoneList(temp);
+                        ContentPnl.Controls.Add(phoneList);
+                    }
+                        
+                    
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Chưa điền");
+                }
+            }
+                                  
+            
+        }
     }
 }

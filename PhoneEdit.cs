@@ -18,6 +18,11 @@ namespace PhoneStat
             InitializeComponent();
             phones = InteractDB.GetData();
         }
+        public PhoneEdit(string search)
+        {
+            InitializeComponent();
+            phones = InteractDB.SearchPhone(search);
+        }
 
         private void PhoneEdit_Load(object sender, EventArgs e)
         {

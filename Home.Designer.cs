@@ -36,7 +36,7 @@
             this.control = new System.Windows.Forms.Panel();
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.LoginLink = new System.Windows.Forms.LinkLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboard = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogOutLink = new System.Windows.Forms.LinkLabel();
@@ -121,7 +121,7 @@
             this.control.BackColor = System.Drawing.Color.Transparent;
             this.control.Controls.Add(this.UserNameLabel);
             this.control.Controls.Add(this.LoginLink);
-            this.control.Controls.Add(this.textBox1);
+            this.control.Controls.Add(this.tbSearch);
             this.control.Controls.Add(this.Minimize);
             this.control.Controls.Add(this.Exit);
             this.control.Dock = System.Windows.Forms.DockStyle.Top;
@@ -163,15 +163,17 @@
             this.LoginLink.VisitedLinkColor = System.Drawing.Color.Aqua;
             this.LoginLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LoginLink_LinkClicked);
             // 
-            // textBox1
+            // tbSearch
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(48, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Tìm kiếm";
-            this.textBox1.Size = new System.Drawing.Size(263, 23);
-            this.textBox1.TabIndex = 2;
+            this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSearch.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbSearch.Location = new System.Drawing.Point(48, 55);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.PlaceholderText = "Tìm kiếm";
+            this.tbSearch.Size = new System.Drawing.Size(263, 23);
+            this.tbSearch.TabIndex = 2;
+            this.tbSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // Dashboard
             // 
@@ -299,7 +301,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2GradientPanel Dashboard;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.LinkLabel PhoneListLink;
         private System.Windows.Forms.LinkLabel PhoneEditLink;
         private System.Windows.Forms.LinkLabel LoginLink;

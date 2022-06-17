@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PhoneStat
 {
@@ -17,6 +18,12 @@ namespace PhoneStat
         {
             InitializeComponent();
             phones = InteractDB.GetData();
+        }
+
+        public PhoneList(string search)
+        {
+            InitializeComponent();
+            phones = InteractDB.SearchPhone(search);
         }
 
         private void FLow_Load(object sender, EventArgs e)
