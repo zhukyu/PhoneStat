@@ -1,6 +1,6 @@
 ﻿namespace PhoneStat
 {
-    partial class ComparedPhone
+    partial class PhoneCompare
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.SearchPanel = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PhoneImage1 = new System.Windows.Forms.PictureBox();
@@ -106,7 +108,7 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.FrontCameraResolutionTextBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.SearchPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage1)).BeginInit();
@@ -138,13 +140,33 @@
             this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
+            // SearchPanel
+            // 
+            this.SearchPanel.Controls.Add(this.comboBox2);
+            this.SearchPanel.Controls.Add(this.comboBox1);
+            this.SearchPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SearchPanel.Location = new System.Drawing.Point(0, 0);
+            this.SearchPanel.Name = "SearchPanel";
+            this.SearchPanel.Size = new System.Drawing.Size(1247, 83);
+            this.SearchPanel.TabIndex = 5;
+            // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(64, 31);
+            this.comboBox1.Location = new System.Drawing.Point(84, 25);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 28);
+            this.comboBox1.Size = new System.Drawing.Size(509, 36);
             this.comboBox1.TabIndex = 0;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(633, 25);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(509, 36);
+            this.comboBox2.TabIndex = 4;
             // 
             // flowLayoutPanel1
             // 
@@ -176,10 +198,10 @@
             this.flowLayoutPanel1.Controls.Add(this.panel23);
             this.flowLayoutPanel1.Controls.Add(this.panel24);
             this.flowLayoutPanel1.Controls.Add(this.panel25);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(61, 81);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(49, 89);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1128, 581);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.flowLayoutPanel1.TabIndex = 6;
             // 
             // panel1
             // 
@@ -1009,27 +1031,20 @@
             this.FrontCameraResolutionTextBox2.TabIndex = 1;
             this.FrontCameraResolutionTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(613, 31);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(270, 28);
-            this.comboBox2.TabIndex = 4;
-            // 
-            // ComparedPhone
+            // PhoneCompare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Controls.Add(this.comboBox2);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.SearchPanel);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.Name = "ComparedPhone";
+            this.Name = "PhoneCompare";
             this.Size = new System.Drawing.Size(1247, 696);
-            this.Load += new System.EventHandler(this.ComparedPhone_Load);
+            this.Load += new System.EventHandler(this.PhoneCompare_Load);
+            this.SearchPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage1)).EndInit();
@@ -1089,6 +1104,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel SearchPanel;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
@@ -1167,6 +1184,5 @@
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox FrontCameraResolutionTextBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

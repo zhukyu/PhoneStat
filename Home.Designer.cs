@@ -39,6 +39,7 @@
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboard = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.PhoneCompareLink = new System.Windows.Forms.LinkLabel();
             this.LogOutLink = new System.Windows.Forms.LinkLabel();
             this.PhoneListLink = new System.Windows.Forms.LinkLabel();
             this.PhoneEditLink = new System.Windows.Forms.LinkLabel();
@@ -139,9 +140,9 @@
             this.UserNameLabel.Location = new System.Drawing.Point(971, 58);
             this.UserNameLabel.Name = "UserNameLabel";
             this.UserNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.UserNameLabel.Size = new System.Drawing.Size(250, 24);
+            this.UserNameLabel.Size = new System.Drawing.Size(174, 24);
             this.UserNameLabel.TabIndex = 7;
-            this.UserNameLabel.Text = "Xin chào, PhamTienHuu";
+            this.UserNameLabel.Text = "Xin chào, Admin";
             this.UserNameLabel.Visible = false;
             // 
             // LoginLink
@@ -177,6 +178,7 @@
             // 
             // Dashboard
             // 
+            this.Dashboard.Controls.Add(this.PhoneCompareLink);
             this.Dashboard.Controls.Add(this.LogOutLink);
             this.Dashboard.Controls.Add(this.PhoneListLink);
             this.Dashboard.Controls.Add(this.PhoneEditLink);
@@ -189,6 +191,25 @@
             this.Dashboard.Name = "Dashboard";
             this.Dashboard.Size = new System.Drawing.Size(288, 809);
             this.Dashboard.TabIndex = 0;
+            // 
+            // PhoneCompareLink
+            // 
+            this.PhoneCompareLink.ActiveLinkColor = System.Drawing.Color.Aqua;
+            this.PhoneCompareLink.AutoSize = true;
+            this.PhoneCompareLink.BackColor = System.Drawing.Color.Transparent;
+            this.PhoneCompareLink.DisabledLinkColor = System.Drawing.Color.Aqua;
+            this.PhoneCompareLink.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PhoneCompareLink.ForeColor = System.Drawing.Color.Aqua;
+            this.PhoneCompareLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.PhoneCompareLink.LinkColor = System.Drawing.Color.White;
+            this.PhoneCompareLink.Location = new System.Drawing.Point(52, 244);
+            this.PhoneCompareLink.Name = "PhoneCompareLink";
+            this.PhoneCompareLink.Size = new System.Drawing.Size(98, 27);
+            this.PhoneCompareLink.TabIndex = 7;
+            this.PhoneCompareLink.TabStop = true;
+            this.PhoneCompareLink.Text = "So sánh";
+            this.PhoneCompareLink.VisitedLinkColor = System.Drawing.Color.Aqua;
+            this.PhoneCompareLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PhoneCompareLink_LinkClicked);
             // 
             // LogOutLink
             // 
@@ -239,7 +260,7 @@
             this.PhoneEditLink.ForeColor = System.Drawing.Color.Aqua;
             this.PhoneEditLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.PhoneEditLink.LinkColor = System.Drawing.Color.White;
-            this.PhoneEditLink.Location = new System.Drawing.Point(52, 260);
+            this.PhoneEditLink.Location = new System.Drawing.Point(52, 319);
             this.PhoneEditLink.Name = "PhoneEditLink";
             this.PhoneEditLink.Size = new System.Drawing.Size(122, 27);
             this.PhoneEditLink.TabIndex = 4;
@@ -308,5 +329,6 @@
         private System.Windows.Forms.LinkLabel LogOutLink;
         private System.Windows.Forms.Label UserNameLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel PhoneCompareLink;
     }
 }

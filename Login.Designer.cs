@@ -93,6 +93,7 @@
             this.Password.PasswordChar = '●';
             this.Password.Size = new System.Drawing.Size(341, 36);
             this.Password.TabIndex = 6;
+            this.Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Password_KeyDown);
             // 
             // UserName
             // 

@@ -50,7 +50,8 @@ namespace PhoneStat
                             reader.Close();
                             command.Dispose();
                             conn.Close();
-                            MessageBox.Show("Login Successfully");
+                            MessageBox.Show("Đăng nhập thành công");
+                            Program.userName = UserName.Text;
                             Program.isLoggedIn = true;
                         }
                         else
@@ -90,6 +91,14 @@ namespace PhoneStat
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                LoginBtn_Click(sender, new EventArgs());
+            }
         }
     }
 }

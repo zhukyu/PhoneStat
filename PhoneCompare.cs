@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace PhoneStat
 {
-    public partial class ComparedPhone : UserControl
+    public partial class PhoneCompare : UserControl
     {
-        public ComparedPhone()
+        public PhoneCompare()
         {
             InitializeComponent();
         }
 
-        private void ComparedPhone_Load(object sender, EventArgs e)
+        private void PhoneCompare_Load(object sender, EventArgs e)
         {
-
+            this.Dock = DockStyle.Fill;
         }
     }
 }

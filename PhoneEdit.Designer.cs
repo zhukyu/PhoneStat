@@ -33,12 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PhoneDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.AddLink = new System.Windows.Forms.LinkLabel();
-            this.EditLink = new System.Windows.Forms.LinkLabel();
-            this.DeleteLink = new System.Windows.Forms.LinkLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhoneName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +47,12 @@
             this.CameraResolution = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FrontCameraResolution = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneImage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.AddLink = new System.Windows.Forms.LinkLabel();
+            this.EditLink = new System.Windows.Forms.LinkLabel();
+            this.DeleteLink = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneDGV)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,6 +65,7 @@
             this.PhoneDGV.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.PhoneDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.PhoneDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PhoneDGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PhoneDGV.BackgroundColor = System.Drawing.Color.White;
             this.PhoneDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -138,6 +139,106 @@
             this.PhoneDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PhoneDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PhoneDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PhoneDGV_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Mã ĐT";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // PhoneName
+            // 
+            this.PhoneName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PhoneName.HeaderText = "Tên ĐT";
+            this.PhoneName.MinimumWidth = 6;
+            this.PhoneName.Name = "PhoneName";
+            this.PhoneName.ReadOnly = true;
+            // 
+            // Brand
+            // 
+            this.Brand.HeaderText = "Hãng SX";
+            this.Brand.MinimumWidth = 6;
+            this.Brand.Name = "Brand";
+            this.Brand.ReadOnly = true;
+            // 
+            // Chipset
+            // 
+            this.Chipset.HeaderText = "Chipset";
+            this.Chipset.MinimumWidth = 6;
+            this.Chipset.Name = "Chipset";
+            this.Chipset.ReadOnly = true;
+            // 
+            // RAM
+            // 
+            this.RAM.HeaderText = "RAM";
+            this.RAM.MinimumWidth = 6;
+            this.RAM.Name = "RAM";
+            this.RAM.ReadOnly = true;
+            // 
+            // ROM
+            // 
+            this.ROM.HeaderText = "ROM";
+            this.ROM.MinimumWidth = 6;
+            this.ROM.Name = "ROM";
+            this.ROM.ReadOnly = true;
+            // 
+            // HasSDCard
+            // 
+            this.HasSDCard.HeaderText = "Thẻ SD";
+            this.HasSDCard.MinimumWidth = 6;
+            this.HasSDCard.Name = "HasSDCard";
+            this.HasSDCard.ReadOnly = true;
+            // 
+            // Battery
+            // 
+            this.Battery.HeaderText = "Pin";
+            this.Battery.MinimumWidth = 6;
+            this.Battery.Name = "Battery";
+            this.Battery.ReadOnly = true;
+            // 
+            // Resolution
+            // 
+            this.Resolution.HeaderText = "Độ phân giải";
+            this.Resolution.MinimumWidth = 6;
+            this.Resolution.Name = "Resolution";
+            this.Resolution.ReadOnly = true;
+            // 
+            // DisplaySize
+            // 
+            this.DisplaySize.HeaderText = "Kích thước";
+            this.DisplaySize.MinimumWidth = 6;
+            this.DisplaySize.Name = "DisplaySize";
+            this.DisplaySize.ReadOnly = true;
+            // 
+            // RefreshRate
+            // 
+            this.RefreshRate.HeaderText = "Tần số quét";
+            this.RefreshRate.MinimumWidth = 6;
+            this.RefreshRate.Name = "RefreshRate";
+            this.RefreshRate.ReadOnly = true;
+            // 
+            // CameraResolution
+            // 
+            this.CameraResolution.HeaderText = "Camera";
+            this.CameraResolution.MinimumWidth = 6;
+            this.CameraResolution.Name = "CameraResolution";
+            this.CameraResolution.ReadOnly = true;
+            // 
+            // FrontCameraResolution
+            // 
+            this.FrontCameraResolution.HeaderText = "Camera trước";
+            this.FrontCameraResolution.MinimumWidth = 6;
+            this.FrontCameraResolution.Name = "FrontCameraResolution";
+            this.FrontCameraResolution.ReadOnly = true;
+            // 
+            // phoneImage
+            // 
+            this.phoneImage.HeaderText = "Ảnh";
+            this.phoneImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.phoneImage.MinimumWidth = 6;
+            this.phoneImage.Name = "phoneImage";
+            this.phoneImage.ReadOnly = true;
             // 
             // guna2GradientPanel1
             // 
@@ -222,121 +323,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1225, 605);
+            this.panel2.Size = new System.Drawing.Size(1225, 611);
             this.panel2.TabIndex = 2;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "Mã ĐT";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 179;
-            // 
-            // PhoneName
-            // 
-            this.PhoneName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PhoneName.HeaderText = "Tên ĐT";
-            this.PhoneName.MinimumWidth = 6;
-            this.PhoneName.Name = "PhoneName";
-            this.PhoneName.ReadOnly = true;
-            // 
-            // Brand
-            // 
-            this.Brand.HeaderText = "Hãng SX";
-            this.Brand.MinimumWidth = 6;
-            this.Brand.Name = "Brand";
-            this.Brand.ReadOnly = true;
-            this.Brand.Width = 179;
-            // 
-            // Chipset
-            // 
-            this.Chipset.HeaderText = "Chipset";
-            this.Chipset.MinimumWidth = 6;
-            this.Chipset.Name = "Chipset";
-            this.Chipset.ReadOnly = true;
-            this.Chipset.Width = 179;
-            // 
-            // RAM
-            // 
-            this.RAM.HeaderText = "RAM";
-            this.RAM.MinimumWidth = 6;
-            this.RAM.Name = "RAM";
-            this.RAM.ReadOnly = true;
-            this.RAM.Width = 179;
-            // 
-            // ROM
-            // 
-            this.ROM.HeaderText = "ROM";
-            this.ROM.MinimumWidth = 6;
-            this.ROM.Name = "ROM";
-            this.ROM.ReadOnly = true;
-            this.ROM.Width = 178;
-            // 
-            // HasSDCard
-            // 
-            this.HasSDCard.HeaderText = "Thẻ SD";
-            this.HasSDCard.MinimumWidth = 6;
-            this.HasSDCard.Name = "HasSDCard";
-            this.HasSDCard.ReadOnly = true;
-            this.HasSDCard.Width = 179;
-            // 
-            // Battery
-            // 
-            this.Battery.HeaderText = "Pin";
-            this.Battery.MinimumWidth = 6;
-            this.Battery.Name = "Battery";
-            this.Battery.ReadOnly = true;
-            this.Battery.Width = 179;
-            // 
-            // Resolution
-            // 
-            this.Resolution.HeaderText = "Độ phân giải";
-            this.Resolution.MinimumWidth = 6;
-            this.Resolution.Name = "Resolution";
-            this.Resolution.ReadOnly = true;
-            this.Resolution.Width = 178;
-            // 
-            // DisplaySize
-            // 
-            this.DisplaySize.HeaderText = "Kích thước";
-            this.DisplaySize.MinimumWidth = 6;
-            this.DisplaySize.Name = "DisplaySize";
-            this.DisplaySize.ReadOnly = true;
-            this.DisplaySize.Width = 179;
-            // 
-            // RefreshRate
-            // 
-            this.RefreshRate.HeaderText = "Tần số quét";
-            this.RefreshRate.MinimumWidth = 6;
-            this.RefreshRate.Name = "RefreshRate";
-            this.RefreshRate.ReadOnly = true;
-            this.RefreshRate.Width = 179;
-            // 
-            // CameraResolution
-            // 
-            this.CameraResolution.HeaderText = "Camera";
-            this.CameraResolution.MinimumWidth = 6;
-            this.CameraResolution.Name = "CameraResolution";
-            this.CameraResolution.ReadOnly = true;
-            this.CameraResolution.Width = 179;
-            // 
-            // FrontCameraResolution
-            // 
-            this.FrontCameraResolution.HeaderText = "Camera trước";
-            this.FrontCameraResolution.MinimumWidth = 6;
-            this.FrontCameraResolution.Name = "FrontCameraResolution";
-            this.FrontCameraResolution.ReadOnly = true;
-            this.FrontCameraResolution.Width = 178;
-            // 
-            // phoneImage
-            // 
-            this.phoneImage.HeaderText = "Ảnh";
-            this.phoneImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.phoneImage.MinimumWidth = 6;
-            this.phoneImage.Name = "phoneImage";
-            this.phoneImage.ReadOnly = true;
-            this.phoneImage.Width = 130;
             // 
             // PhoneEdit
             // 

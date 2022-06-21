@@ -131,6 +131,7 @@ namespace PhoneStat
                 LoginLink.Hide();
                 LogOutLink.Show();
                 UserNameLabel.Show();
+                UserNameLabel.Text = $"Xin chào, {Program.userName}";
             }
         }
         private void LoginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -199,6 +200,15 @@ namespace PhoneStat
             }
                                   
             
+        }
+
+        private void PhoneCompareLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (PhoneCompareLink.LinkVisited == true)
+                return;
+            SelectButton(PhoneCompareLink, new EventArgs());
+            PhoneCompare phoneCompare = new PhoneCompare();
+            ContentPnl.Controls.Add(phoneCompare);
         }
     }
 }
