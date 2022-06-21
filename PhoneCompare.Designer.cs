@@ -29,192 +29,191 @@
         private void InitializeComponent()
         {
             this.SearchPanel = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.SearchBtn2 = new System.Windows.Forms.Button();
+            this.SearchBtn1 = new System.Windows.Forms.Button();
+            this.SearchCB1 = new System.Windows.Forms.ComboBox();
+            this.SearchCB2 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PhoneImage1 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.PhoneImage2 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.NameTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.NameTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.BrandTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.BrandTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ChipsetTextBox1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ChipsetTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.NameTB2 = new System.Windows.Forms.TextBox();
+            this.NameTB1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.BrandTB2 = new System.Windows.Forms.TextBox();
+            this.BrandTB1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ChipsetTB2 = new System.Windows.Forms.TextBox();
+            this.ChipsetTB1 = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.RAMTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.RAMTB2 = new System.Windows.Forms.TextBox();
+            this.RAMTB1 = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ROMTB2 = new System.Windows.Forms.TextBox();
+            this.ROMTB1 = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.RAMTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ROMTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.ROMTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.HasSDCardTextBox1 = new System.Windows.Forms.TextBox();
+            this.HasSDCardTB2 = new System.Windows.Forms.TextBox();
+            this.HasSDCardTB1 = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.HasSDCardTextBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.BatteryTB2 = new System.Windows.Forms.TextBox();
+            this.BatteryTB1 = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ResolutionTB2 = new System.Windows.Forms.TextBox();
+            this.ResolutionTB1 = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.DisplaySizeTB2 = new System.Windows.Forms.TextBox();
+            this.DisplaySizeTB1 = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.RefreshRateTB2 = new System.Windows.Forms.TextBox();
+            this.RefreshRateTB1 = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CameraResolutionTB2 = new System.Windows.Forms.TextBox();
+            this.CameraResolutionTB1 = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.BatteryTextBox1 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.FrontCameraResolutionTB2 = new System.Windows.Forms.TextBox();
+            this.FrontCameraResolutionTB1 = new System.Windows.Forms.TextBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.BatteryTextBox2 = new System.Windows.Forms.TextBox();
-            this.nameField = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ResolutionTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.ResolutionTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.DisplaySizeTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.DisplaySizeTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.RefreshRateTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.RefreshRateTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.CameraResolutionTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.CameraResolutionTextBox2 = new System.Windows.Forms.TextBox();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.FrontCameraResolutionTextBox1 = new System.Windows.Forms.TextBox();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.FrontCameraResolutionTextBox2 = new System.Windows.Forms.TextBox();
             this.SearchPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage1)).BeginInit();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage2)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel14.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.nameField.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchPanel
             // 
-            this.SearchPanel.Controls.Add(this.comboBox2);
-            this.SearchPanel.Controls.Add(this.comboBox1);
+            this.SearchPanel.Controls.Add(this.SearchBtn2);
+            this.SearchPanel.Controls.Add(this.SearchBtn1);
+            this.SearchPanel.Controls.Add(this.SearchCB1);
+            this.SearchPanel.Controls.Add(this.SearchCB2);
             this.SearchPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SearchPanel.Location = new System.Drawing.Point(0, 0);
+            this.SearchPanel.Location = new System.Drawing.Point(3, 3);
             this.SearchPanel.Name = "SearchPanel";
             this.SearchPanel.Size = new System.Drawing.Size(1247, 83);
             this.SearchPanel.TabIndex = 5;
             // 
-            // comboBox1
+            // SearchBtn2
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(509, 36);
-            this.comboBox1.TabIndex = 0;
+            this.SearchBtn2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.SearchBtn2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SearchBtn2.ForeColor = System.Drawing.Color.White;
+            this.SearchBtn2.Location = new System.Drawing.Point(1090, 16);
+            this.SearchBtn2.Name = "SearchBtn2";
+            this.SearchBtn2.Size = new System.Drawing.Size(97, 40);
+            this.SearchBtn2.TabIndex = 6;
+            this.SearchBtn2.Text = "Tìm kiếm";
+            this.SearchBtn2.UseVisualStyleBackColor = false;
+            this.SearchBtn2.Click += new System.EventHandler(this.SearchBtn2_Click);
             // 
-            // comboBox2
+            // SearchBtn1
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(633, 25);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(509, 36);
-            this.comboBox2.TabIndex = 4;
+            this.SearchBtn1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.SearchBtn1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SearchBtn1.ForeColor = System.Drawing.Color.White;
+            this.SearchBtn1.Location = new System.Drawing.Point(581, 16);
+            this.SearchBtn1.Name = "SearchBtn1";
+            this.SearchBtn1.Size = new System.Drawing.Size(97, 40);
+            this.SearchBtn1.TabIndex = 5;
+            this.SearchBtn1.Text = "Tìm kiếm";
+            this.SearchBtn1.UseVisualStyleBackColor = false;
+            this.SearchBtn1.Click += new System.EventHandler(this.SearchBtn1_Click);
+            // 
+            // SearchCB1
+            // 
+            this.SearchCB1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.SearchCB1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.SearchCB1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SearchCB1.FormattingEnabled = true;
+            this.SearchCB1.Location = new System.Drawing.Point(228, 20);
+            this.SearchCB1.Name = "SearchCB1";
+            this.SearchCB1.Size = new System.Drawing.Size(348, 36);
+            this.SearchCB1.TabIndex = 0;
+            // 
+            // SearchCB2
+            // 
+            this.SearchCB2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.SearchCB2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.SearchCB2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SearchCB2.FormattingEnabled = true;
+            this.SearchCB2.Location = new System.Drawing.Point(737, 20);
+            this.SearchCB2.Name = "SearchCB2";
+            this.SearchCB2.Size = new System.Drawing.Size(347, 36);
+            this.SearchCB2.TabIndex = 4;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.flowLayoutPanel1.Controls.Add(this.SearchPanel);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel13);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Controls.Add(this.panel12);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel14);
+            this.flowLayoutPanel1.Controls.Add(this.panel12);
+            this.flowLayoutPanel1.Controls.Add(this.panel11);
+            this.flowLayoutPanel1.Controls.Add(this.panel10);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
-            this.flowLayoutPanel1.Controls.Add(this.panel16);
-            this.flowLayoutPanel1.Controls.Add(this.nameField);
-            this.flowLayoutPanel1.Controls.Add(this.panel17);
-            this.flowLayoutPanel1.Controls.Add(this.panel18);
-            this.flowLayoutPanel1.Controls.Add(this.panel19);
-            this.flowLayoutPanel1.Controls.Add(this.panel20);
-            this.flowLayoutPanel1.Controls.Add(this.panel21);
-            this.flowLayoutPanel1.Controls.Add(this.panel22);
-            this.flowLayoutPanel1.Controls.Add(this.panel23);
-            this.flowLayoutPanel1.Controls.Add(this.panel24);
-            this.flowLayoutPanel1.Controls.Add(this.panel25);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(49, 89);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(1247, 696);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1128, 581);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1247, 696);
             this.flowLayoutPanel1.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(3, 92);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(207, 297);
+            this.panel3.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.PhoneImage1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(216, 92);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(543, 297);
+            this.panel1.Size = new System.Drawing.Size(497, 297);
             this.panel1.TabIndex = 9;
             // 
             // PhoneImage1
             // 
             this.PhoneImage1.Image = global::PhoneStat.Properties.Resources._65756;
-            this.PhoneImage1.Location = new System.Drawing.Point(189, 12);
+            this.PhoneImage1.Location = new System.Drawing.Point(131, 12);
             this.PhoneImage1.Name = "PhoneImage1";
             this.PhoneImage1.Size = new System.Drawing.Size(232, 272);
             this.PhoneImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,825 +223,604 @@
             // panel13
             // 
             this.panel13.Controls.Add(this.PhoneImage2);
-            this.panel13.Location = new System.Drawing.Point(552, 3);
+            this.panel13.Location = new System.Drawing.Point(719, 92);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(543, 297);
+            this.panel13.Size = new System.Drawing.Size(497, 297);
             this.panel13.TabIndex = 8;
             // 
             // PhoneImage2
             // 
             this.PhoneImage2.Image = global::PhoneStat.Properties.Resources._65756;
-            this.PhoneImage2.Location = new System.Drawing.Point(189, 12);
+            this.PhoneImage2.Location = new System.Drawing.Point(157, 12);
             this.PhoneImage2.Name = "PhoneImage2";
             this.PhoneImage2.Size = new System.Drawing.Size(232, 272);
             this.PhoneImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PhoneImage2.TabIndex = 0;
             this.PhoneImage2.TabStop = false;
             // 
-            // panel7
+            // panel4
             // 
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.NameTextBox1);
-            this.panel7.Location = new System.Drawing.Point(3, 306);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(543, 53);
-            this.panel7.TabIndex = 10;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.NameTB2);
+            this.panel4.Controls.Add(this.NameTB1);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Location = new System.Drawing.Point(3, 395);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1212, 61);
+            this.panel4.TabIndex = 4;
             // 
-            // label8
+            // NameTB2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(20, 17);
-            this.label8.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 24);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Tên Điện thoại";
+            this.NameTB2.BackColor = System.Drawing.Color.White;
+            this.NameTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameTB2.Location = new System.Drawing.Point(737, 18);
+            this.NameTB2.Name = "NameTB2";
+            this.NameTB2.ReadOnly = true;
+            this.NameTB2.Size = new System.Drawing.Size(450, 25);
+            this.NameTB2.TabIndex = 1;
+            this.NameTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // NameTextBox1
+            // NameTB1
             // 
-            this.NameTextBox1.BackColor = System.Drawing.Color.White;
-            this.NameTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.NameTextBox1.Name = "NameTextBox1";
-            this.NameTextBox1.ReadOnly = true;
-            this.NameTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.NameTextBox1.TabIndex = 1;
-            this.NameTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.NameTextBox2);
-            this.panel2.Location = new System.Drawing.Point(552, 306);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 53);
-            this.panel2.TabIndex = 11;
+            this.NameTB1.BackColor = System.Drawing.Color.White;
+            this.NameTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameTB1.Location = new System.Drawing.Point(228, 18);
+            this.NameTB1.Name = "NameTB1";
+            this.NameTB1.ReadOnly = true;
+            this.NameTB1.Size = new System.Drawing.Size(450, 25);
+            this.NameTB1.TabIndex = 1;
+            this.NameTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(20, 17);
+            this.label1.Location = new System.Drawing.Point(11, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 24);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Tên Điện thoại";
             // 
-            // NameTextBox2
+            // panel5
             // 
-            this.NameTextBox2.BackColor = System.Drawing.Color.White;
-            this.NameTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.NameTextBox2.Name = "NameTextBox2";
-            this.NameTextBox2.ReadOnly = true;
-            this.NameTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.NameTextBox2.TabIndex = 1;
-            this.NameTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.BrandTextBox1);
-            this.panel6.Location = new System.Drawing.Point(3, 365);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(543, 53);
-            this.panel6.TabIndex = 12;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.BrandTB2);
+            this.panel5.Controls.Add(this.BrandTB1);
+            this.panel5.Location = new System.Drawing.Point(3, 462);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1212, 61);
+            this.panel5.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(20, 17);
+            this.label7.Location = new System.Drawing.Point(11, 20);
             this.label7.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 24);
-            this.label7.TabIndex = 2;
+            this.label7.TabIndex = 3;
             this.label7.Text = "Hãng sản xuất";
             // 
-            // BrandTextBox1
+            // BrandTB2
             // 
-            this.BrandTextBox1.BackColor = System.Drawing.Color.White;
-            this.BrandTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BrandTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BrandTextBox1.Location = new System.Drawing.Point(255, 17);
-            this.BrandTextBox1.Name = "BrandTextBox1";
-            this.BrandTextBox1.ReadOnly = true;
-            this.BrandTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.BrandTextBox1.TabIndex = 1;
-            this.BrandTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BrandTB2.BackColor = System.Drawing.Color.White;
+            this.BrandTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BrandTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrandTB2.Location = new System.Drawing.Point(737, 18);
+            this.BrandTB2.Name = "BrandTB2";
+            this.BrandTB2.ReadOnly = true;
+            this.BrandTB2.Size = new System.Drawing.Size(450, 25);
+            this.BrandTB2.TabIndex = 1;
+            this.BrandTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel3
+            // BrandTB1
             // 
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.BrandTextBox2);
-            this.panel3.Location = new System.Drawing.Point(552, 365);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(543, 53);
-            this.panel3.TabIndex = 13;
+            this.BrandTB1.BackColor = System.Drawing.Color.White;
+            this.BrandTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BrandTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrandTB1.Location = new System.Drawing.Point(228, 18);
+            this.BrandTB1.Name = "BrandTB1";
+            this.BrandTB1.ReadOnly = true;
+            this.BrandTB1.Size = new System.Drawing.Size(450, 25);
+            this.BrandTB1.TabIndex = 1;
+            this.BrandTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // panel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(20, 17);
-            this.label2.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Hãng sản xuất";
-            // 
-            // BrandTextBox2
-            // 
-            this.BrandTextBox2.BackColor = System.Drawing.Color.White;
-            this.BrandTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BrandTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BrandTextBox2.Location = new System.Drawing.Point(244, 18);
-            this.BrandTextBox2.Name = "BrandTextBox2";
-            this.BrandTextBox2.ReadOnly = true;
-            this.BrandTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.BrandTextBox2.TabIndex = 1;
-            this.BrandTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.ChipsetTextBox1);
-            this.panel5.Location = new System.Drawing.Point(3, 424);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(543, 53);
-            this.panel5.TabIndex = 14;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.ChipsetTB2);
+            this.panel2.Controls.Add(this.ChipsetTB1);
+            this.panel2.Location = new System.Drawing.Point(3, 529);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1212, 61);
+            this.panel2.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(20, 17);
+            this.label6.Location = new System.Drawing.Point(11, 20);
             this.label6.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 24);
-            this.label6.TabIndex = 2;
+            this.label6.TabIndex = 3;
             this.label6.Text = "Chipset";
             // 
-            // ChipsetTextBox1
+            // ChipsetTB2
             // 
-            this.ChipsetTextBox1.BackColor = System.Drawing.Color.White;
-            this.ChipsetTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ChipsetTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChipsetTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.ChipsetTextBox1.Name = "ChipsetTextBox1";
-            this.ChipsetTextBox1.ReadOnly = true;
-            this.ChipsetTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.ChipsetTextBox1.TabIndex = 1;
-            this.ChipsetTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ChipsetTB2.BackColor = System.Drawing.Color.White;
+            this.ChipsetTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChipsetTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChipsetTB2.Location = new System.Drawing.Point(737, 18);
+            this.ChipsetTB2.Name = "ChipsetTB2";
+            this.ChipsetTB2.ReadOnly = true;
+            this.ChipsetTB2.Size = new System.Drawing.Size(450, 25);
+            this.ChipsetTB2.TabIndex = 1;
+            this.ChipsetTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel4
+            // ChipsetTB1
             // 
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.ChipsetTextBox2);
-            this.panel4.Location = new System.Drawing.Point(552, 424);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(543, 53);
-            this.panel4.TabIndex = 15;
+            this.ChipsetTB1.BackColor = System.Drawing.Color.White;
+            this.ChipsetTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChipsetTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChipsetTB1.Location = new System.Drawing.Point(228, 18);
+            this.ChipsetTB1.Name = "ChipsetTB1";
+            this.ChipsetTB1.ReadOnly = true;
+            this.ChipsetTB1.Size = new System.Drawing.Size(450, 25);
+            this.ChipsetTB1.TabIndex = 1;
+            this.ChipsetTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // panel6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(20, 17);
-            this.label3.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Chipset";
-            // 
-            // ChipsetTextBox2
-            // 
-            this.ChipsetTextBox2.BackColor = System.Drawing.Color.White;
-            this.ChipsetTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ChipsetTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChipsetTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.ChipsetTextBox2.Name = "ChipsetTextBox2";
-            this.ChipsetTextBox2.ReadOnly = true;
-            this.ChipsetTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.ChipsetTextBox2.TabIndex = 1;
-            this.ChipsetTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.RAMTextBox1);
-            this.panel8.Location = new System.Drawing.Point(3, 483);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(543, 53);
-            this.panel8.TabIndex = 16;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.RAMTB2);
+            this.panel6.Controls.Add(this.RAMTB1);
+            this.panel6.Location = new System.Drawing.Point(3, 596);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1212, 61);
+            this.panel6.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(20, 17);
+            this.label5.Location = new System.Drawing.Point(11, 20);
             this.label5.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(173, 24);
-            this.label5.TabIndex = 2;
+            this.label5.TabIndex = 3;
             this.label5.Text = "Dung lượng RAM";
             // 
-            // RAMTextBox1
+            // RAMTB2
             // 
-            this.RAMTextBox1.BackColor = System.Drawing.Color.White;
-            this.RAMTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RAMTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RAMTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.RAMTextBox1.Name = "RAMTextBox1";
-            this.RAMTextBox1.ReadOnly = true;
-            this.RAMTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.RAMTextBox1.TabIndex = 1;
-            this.RAMTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RAMTB2.BackColor = System.Drawing.Color.White;
+            this.RAMTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RAMTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RAMTB2.Location = new System.Drawing.Point(737, 18);
+            this.RAMTB2.Name = "RAMTB2";
+            this.RAMTB2.ReadOnly = true;
+            this.RAMTB2.Size = new System.Drawing.Size(450, 25);
+            this.RAMTB2.TabIndex = 1;
+            this.RAMTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel9
+            // RAMTB1
             // 
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Controls.Add(this.RAMTextBox2);
-            this.panel9.Location = new System.Drawing.Point(552, 483);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(543, 53);
-            this.panel9.TabIndex = 17;
+            this.RAMTB1.BackColor = System.Drawing.Color.White;
+            this.RAMTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RAMTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RAMTB1.Location = new System.Drawing.Point(228, 18);
+            this.RAMTB1.Name = "RAMTB1";
+            this.RAMTB1.ReadOnly = true;
+            this.RAMTB1.Size = new System.Drawing.Size(450, 25);
+            this.RAMTB1.TabIndex = 1;
+            this.RAMTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label2);
+            this.panel8.Controls.Add(this.ROMTB2);
+            this.panel8.Controls.Add(this.ROMTB1);
+            this.panel8.Location = new System.Drawing.Point(3, 663);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1212, 61);
+            this.panel8.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(11, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Dung lượng ROM";
+            // 
+            // ROMTB2
+            // 
+            this.ROMTB2.BackColor = System.Drawing.Color.White;
+            this.ROMTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ROMTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ROMTB2.Location = new System.Drawing.Point(737, 18);
+            this.ROMTB2.Name = "ROMTB2";
+            this.ROMTB2.ReadOnly = true;
+            this.ROMTB2.Size = new System.Drawing.Size(450, 25);
+            this.ROMTB2.TabIndex = 1;
+            this.ROMTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ROMTB1
+            // 
+            this.ROMTB1.BackColor = System.Drawing.Color.White;
+            this.ROMTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ROMTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ROMTB1.Location = new System.Drawing.Point(228, 18);
+            this.ROMTB1.Name = "ROMTB1";
+            this.ROMTB1.ReadOnly = true;
+            this.ROMTB1.Size = new System.Drawing.Size(450, 25);
+            this.ROMTB1.TabIndex = 1;
+            this.ROMTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.HasSDCardTB2);
+            this.panel7.Controls.Add(this.HasSDCardTB1);
+            this.panel7.Location = new System.Drawing.Point(3, 730);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1212, 61);
+            this.panel7.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(20, 17);
+            this.label4.Location = new System.Drawing.Point(11, 18);
             this.label4.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Dung lượng RAM";
+            this.label4.Size = new System.Drawing.Size(151, 24);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Hỗ trợ thẻ nhớ";
             // 
-            // RAMTextBox2
+            // HasSDCardTB2
             // 
-            this.RAMTextBox2.BackColor = System.Drawing.Color.White;
-            this.RAMTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RAMTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RAMTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.RAMTextBox2.Name = "RAMTextBox2";
-            this.RAMTextBox2.ReadOnly = true;
-            this.RAMTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.RAMTextBox2.TabIndex = 1;
-            this.RAMTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.HasSDCardTB2.BackColor = System.Drawing.Color.White;
+            this.HasSDCardTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HasSDCardTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HasSDCardTB2.Location = new System.Drawing.Point(737, 18);
+            this.HasSDCardTB2.Name = "HasSDCardTB2";
+            this.HasSDCardTB2.ReadOnly = true;
+            this.HasSDCardTB2.Size = new System.Drawing.Size(450, 25);
+            this.HasSDCardTB2.TabIndex = 1;
+            this.HasSDCardTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel10
+            // HasSDCardTB1
             // 
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Controls.Add(this.ROMTextBox1);
-            this.panel10.Location = new System.Drawing.Point(3, 542);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(543, 53);
-            this.panel10.TabIndex = 18;
+            this.HasSDCardTB1.BackColor = System.Drawing.Color.White;
+            this.HasSDCardTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HasSDCardTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HasSDCardTB1.Location = new System.Drawing.Point(228, 18);
+            this.HasSDCardTB1.Name = "HasSDCardTB1";
+            this.HasSDCardTB1.ReadOnly = true;
+            this.HasSDCardTB1.Size = new System.Drawing.Size(450, 25);
+            this.HasSDCardTB1.TabIndex = 1;
+            this.HasSDCardTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label9
+            // panel14
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(20, 17);
-            this.label9.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(176, 24);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Dung lượng ROM";
-            // 
-            // ROMTextBox1
-            // 
-            this.ROMTextBox1.BackColor = System.Drawing.Color.White;
-            this.ROMTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ROMTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ROMTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.ROMTextBox1.Name = "ROMTextBox1";
-            this.ROMTextBox1.ReadOnly = true;
-            this.ROMTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.ROMTextBox1.TabIndex = 1;
-            this.ROMTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.label10);
-            this.panel11.Controls.Add(this.ROMTextBox2);
-            this.panel11.Location = new System.Drawing.Point(552, 542);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(543, 53);
-            this.panel11.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(20, 17);
-            this.label10.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(176, 24);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Dung lượng ROM";
-            // 
-            // ROMTextBox2
-            // 
-            this.ROMTextBox2.BackColor = System.Drawing.Color.White;
-            this.ROMTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ROMTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ROMTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.ROMTextBox2.Name = "ROMTextBox2";
-            this.ROMTextBox2.ReadOnly = true;
-            this.ROMTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.ROMTextBox2.TabIndex = 1;
-            this.ROMTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.label11);
-            this.panel12.Controls.Add(this.HasSDCardTextBox1);
-            this.panel12.Location = new System.Drawing.Point(3, 601);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(543, 53);
-            this.panel12.TabIndex = 20;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.label11);
+            this.panel14.Controls.Add(this.BatteryTB2);
+            this.panel14.Controls.Add(this.BatteryTB1);
+            this.panel14.Location = new System.Drawing.Point(3, 797);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1212, 61);
+            this.panel14.TabIndex = 5;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(20, 17);
+            this.label11.Location = new System.Drawing.Point(11, 20);
             this.label11.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 24);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Hỗ trợ thẻ nhớ";
+            this.label11.Size = new System.Drawing.Size(158, 24);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Dung lượng pin";
             // 
-            // HasSDCardTextBox1
+            // BatteryTB2
             // 
-            this.HasSDCardTextBox1.BackColor = System.Drawing.Color.White;
-            this.HasSDCardTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.HasSDCardTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HasSDCardTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.HasSDCardTextBox1.Name = "HasSDCardTextBox1";
-            this.HasSDCardTextBox1.ReadOnly = true;
-            this.HasSDCardTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.HasSDCardTextBox1.TabIndex = 1;
-            this.HasSDCardTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BatteryTB2.BackColor = System.Drawing.Color.White;
+            this.BatteryTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BatteryTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BatteryTB2.Location = new System.Drawing.Point(737, 18);
+            this.BatteryTB2.Name = "BatteryTB2";
+            this.BatteryTB2.ReadOnly = true;
+            this.BatteryTB2.Size = new System.Drawing.Size(450, 25);
+            this.BatteryTB2.TabIndex = 1;
+            this.BatteryTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel14
+            // BatteryTB1
             // 
-            this.panel14.Controls.Add(this.label12);
-            this.panel14.Controls.Add(this.HasSDCardTextBox2);
-            this.panel14.Location = new System.Drawing.Point(552, 601);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(543, 53);
-            this.panel14.TabIndex = 21;
+            this.BatteryTB1.BackColor = System.Drawing.Color.White;
+            this.BatteryTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BatteryTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BatteryTB1.Location = new System.Drawing.Point(228, 18);
+            this.BatteryTB1.Name = "BatteryTB1";
+            this.BatteryTB1.ReadOnly = true;
+            this.BatteryTB1.Size = new System.Drawing.Size(450, 25);
+            this.BatteryTB1.TabIndex = 1;
+            this.BatteryTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.label10);
+            this.panel12.Controls.Add(this.ResolutionTB2);
+            this.panel12.Controls.Add(this.ResolutionTB1);
+            this.panel12.Location = new System.Drawing.Point(3, 864);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1212, 61);
+            this.panel12.TabIndex = 5;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(11, 20);
+            this.label10.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(128, 24);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Độ phân giải";
+            // 
+            // ResolutionTB2
+            // 
+            this.ResolutionTB2.BackColor = System.Drawing.Color.White;
+            this.ResolutionTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ResolutionTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResolutionTB2.Location = new System.Drawing.Point(737, 18);
+            this.ResolutionTB2.Name = "ResolutionTB2";
+            this.ResolutionTB2.ReadOnly = true;
+            this.ResolutionTB2.Size = new System.Drawing.Size(450, 25);
+            this.ResolutionTB2.TabIndex = 1;
+            this.ResolutionTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ResolutionTB1
+            // 
+            this.ResolutionTB1.BackColor = System.Drawing.Color.White;
+            this.ResolutionTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ResolutionTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResolutionTB1.Location = new System.Drawing.Point(228, 18);
+            this.ResolutionTB1.Name = "ResolutionTB1";
+            this.ResolutionTB1.ReadOnly = true;
+            this.ResolutionTB1.Size = new System.Drawing.Size(450, 25);
+            this.ResolutionTB1.TabIndex = 1;
+            this.ResolutionTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label9);
+            this.panel11.Controls.Add(this.DisplaySizeTB2);
+            this.panel11.Controls.Add(this.DisplaySizeTB1);
+            this.panel11.Location = new System.Drawing.Point(3, 931);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1212, 61);
+            this.panel11.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.DimGray;
+            this.label9.Location = new System.Drawing.Point(11, 20);
+            this.label9.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(211, 24);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Kích thước màn hình";
+            // 
+            // DisplaySizeTB2
+            // 
+            this.DisplaySizeTB2.BackColor = System.Drawing.Color.White;
+            this.DisplaySizeTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplaySizeTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisplaySizeTB2.Location = new System.Drawing.Point(737, 18);
+            this.DisplaySizeTB2.Name = "DisplaySizeTB2";
+            this.DisplaySizeTB2.ReadOnly = true;
+            this.DisplaySizeTB2.Size = new System.Drawing.Size(450, 25);
+            this.DisplaySizeTB2.TabIndex = 1;
+            this.DisplaySizeTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // DisplaySizeTB1
+            // 
+            this.DisplaySizeTB1.BackColor = System.Drawing.Color.White;
+            this.DisplaySizeTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplaySizeTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisplaySizeTB1.Location = new System.Drawing.Point(228, 18);
+            this.DisplaySizeTB1.Name = "DisplaySizeTB1";
+            this.DisplaySizeTB1.ReadOnly = true;
+            this.DisplaySizeTB1.Size = new System.Drawing.Size(450, 25);
+            this.DisplaySizeTB1.TabIndex = 1;
+            this.DisplaySizeTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.label8);
+            this.panel10.Controls.Add(this.RefreshRateTB2);
+            this.panel10.Controls.Add(this.RefreshRateTB1);
+            this.panel10.Location = new System.Drawing.Point(3, 998);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1212, 61);
+            this.panel10.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
+            this.label8.Location = new System.Drawing.Point(11, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 24);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Tần số quét";
+            // 
+            // RefreshRateTB2
+            // 
+            this.RefreshRateTB2.BackColor = System.Drawing.Color.White;
+            this.RefreshRateTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RefreshRateTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RefreshRateTB2.Location = new System.Drawing.Point(737, 18);
+            this.RefreshRateTB2.Name = "RefreshRateTB2";
+            this.RefreshRateTB2.ReadOnly = true;
+            this.RefreshRateTB2.Size = new System.Drawing.Size(450, 25);
+            this.RefreshRateTB2.TabIndex = 1;
+            this.RefreshRateTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // RefreshRateTB1
+            // 
+            this.RefreshRateTB1.BackColor = System.Drawing.Color.White;
+            this.RefreshRateTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RefreshRateTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RefreshRateTB1.Location = new System.Drawing.Point(228, 18);
+            this.RefreshRateTB1.Name = "RefreshRateTB1";
+            this.RefreshRateTB1.ReadOnly = true;
+            this.RefreshRateTB1.Size = new System.Drawing.Size(450, 25);
+            this.RefreshRateTB1.TabIndex = 1;
+            this.RefreshRateTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Controls.Add(this.CameraResolutionTB2);
+            this.panel9.Controls.Add(this.CameraResolutionTB1);
+            this.panel9.Location = new System.Drawing.Point(3, 1065);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1212, 61);
+            this.panel9.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(11, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 24);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Camera sau";
+            // 
+            // CameraResolutionTB2
+            // 
+            this.CameraResolutionTB2.BackColor = System.Drawing.Color.White;
+            this.CameraResolutionTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CameraResolutionTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CameraResolutionTB2.Location = new System.Drawing.Point(737, 18);
+            this.CameraResolutionTB2.Name = "CameraResolutionTB2";
+            this.CameraResolutionTB2.ReadOnly = true;
+            this.CameraResolutionTB2.Size = new System.Drawing.Size(450, 25);
+            this.CameraResolutionTB2.TabIndex = 1;
+            this.CameraResolutionTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CameraResolutionTB1
+            // 
+            this.CameraResolutionTB1.BackColor = System.Drawing.Color.White;
+            this.CameraResolutionTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CameraResolutionTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CameraResolutionTB1.Location = new System.Drawing.Point(228, 18);
+            this.CameraResolutionTB1.Name = "CameraResolutionTB1";
+            this.CameraResolutionTB1.ReadOnly = true;
+            this.CameraResolutionTB1.Size = new System.Drawing.Size(450, 25);
+            this.CameraResolutionTB1.TabIndex = 1;
+            this.CameraResolutionTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.label12);
+            this.panel15.Controls.Add(this.FrontCameraResolutionTB2);
+            this.panel15.Controls.Add(this.FrontCameraResolutionTB1);
+            this.panel15.Location = new System.Drawing.Point(3, 1132);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1212, 61);
+            this.panel15.TabIndex = 6;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(20, 17);
+            this.label12.Location = new System.Drawing.Point(11, 20);
             this.label12.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(151, 24);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Hỗ trợ thẻ nhớ";
+            this.label12.Size = new System.Drawing.Size(142, 24);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Camera trước";
             // 
-            // HasSDCardTextBox2
+            // FrontCameraResolutionTB2
             // 
-            this.HasSDCardTextBox2.BackColor = System.Drawing.Color.White;
-            this.HasSDCardTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.HasSDCardTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HasSDCardTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.HasSDCardTextBox2.Name = "HasSDCardTextBox2";
-            this.HasSDCardTextBox2.ReadOnly = true;
-            this.HasSDCardTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.HasSDCardTextBox2.TabIndex = 1;
-            this.HasSDCardTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.FrontCameraResolutionTB2.BackColor = System.Drawing.Color.White;
+            this.FrontCameraResolutionTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FrontCameraResolutionTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FrontCameraResolutionTB2.Location = new System.Drawing.Point(737, 18);
+            this.FrontCameraResolutionTB2.Name = "FrontCameraResolutionTB2";
+            this.FrontCameraResolutionTB2.ReadOnly = true;
+            this.FrontCameraResolutionTB2.Size = new System.Drawing.Size(450, 25);
+            this.FrontCameraResolutionTB2.TabIndex = 1;
+            this.FrontCameraResolutionTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel15
+            // FrontCameraResolutionTB1
             // 
-            this.panel15.Controls.Add(this.label13);
-            this.panel15.Controls.Add(this.BatteryTextBox1);
-            this.panel15.Location = new System.Drawing.Point(3, 660);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(543, 53);
-            this.panel15.TabIndex = 22;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(20, 17);
-            this.label13.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(158, 24);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Dung lượng pin";
-            // 
-            // BatteryTextBox1
-            // 
-            this.BatteryTextBox1.BackColor = System.Drawing.Color.White;
-            this.BatteryTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BatteryTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BatteryTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.BatteryTextBox1.Name = "BatteryTextBox1";
-            this.BatteryTextBox1.ReadOnly = true;
-            this.BatteryTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.BatteryTextBox1.TabIndex = 1;
-            this.BatteryTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.FrontCameraResolutionTB1.BackColor = System.Drawing.Color.White;
+            this.FrontCameraResolutionTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FrontCameraResolutionTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FrontCameraResolutionTB1.Location = new System.Drawing.Point(228, 18);
+            this.FrontCameraResolutionTB1.Name = "FrontCameraResolutionTB1";
+            this.FrontCameraResolutionTB1.ReadOnly = true;
+            this.FrontCameraResolutionTB1.Size = new System.Drawing.Size(450, 25);
+            this.FrontCameraResolutionTB1.TabIndex = 1;
+            this.FrontCameraResolutionTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.label14);
-            this.panel16.Controls.Add(this.BatteryTextBox2);
-            this.panel16.Location = new System.Drawing.Point(552, 660);
+            this.panel16.Controls.Add(this.flowLayoutPanel1);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(543, 53);
-            this.panel16.TabIndex = 23;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(20, 17);
-            this.label14.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(158, 24);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Dung lượng pin";
-            // 
-            // BatteryTextBox2
-            // 
-            this.BatteryTextBox2.BackColor = System.Drawing.Color.White;
-            this.BatteryTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BatteryTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BatteryTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.BatteryTextBox2.Name = "BatteryTextBox2";
-            this.BatteryTextBox2.ReadOnly = true;
-            this.BatteryTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.BatteryTextBox2.TabIndex = 1;
-            this.BatteryTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // nameField
-            // 
-            this.nameField.Controls.Add(this.label15);
-            this.nameField.Controls.Add(this.ResolutionTextBox1);
-            this.nameField.Location = new System.Drawing.Point(3, 719);
-            this.nameField.Name = "nameField";
-            this.nameField.Size = new System.Drawing.Size(543, 53);
-            this.nameField.TabIndex = 24;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.DimGray;
-            this.label15.Location = new System.Drawing.Point(20, 17);
-            this.label15.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 24);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Độ phân giải";
-            // 
-            // ResolutionTextBox1
-            // 
-            this.ResolutionTextBox1.BackColor = System.Drawing.Color.White;
-            this.ResolutionTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ResolutionTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResolutionTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.ResolutionTextBox1.Name = "ResolutionTextBox1";
-            this.ResolutionTextBox1.ReadOnly = true;
-            this.ResolutionTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.ResolutionTextBox1.TabIndex = 1;
-            this.ResolutionTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.label16);
-            this.panel17.Controls.Add(this.ResolutionTextBox2);
-            this.panel17.Location = new System.Drawing.Point(552, 719);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(543, 53);
-            this.panel17.TabIndex = 25;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(20, 17);
-            this.label16.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(128, 24);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Độ phân giải";
-            // 
-            // ResolutionTextBox2
-            // 
-            this.ResolutionTextBox2.BackColor = System.Drawing.Color.White;
-            this.ResolutionTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ResolutionTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResolutionTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.ResolutionTextBox2.Name = "ResolutionTextBox2";
-            this.ResolutionTextBox2.ReadOnly = true;
-            this.ResolutionTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.ResolutionTextBox2.TabIndex = 1;
-            this.ResolutionTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.label17);
-            this.panel18.Controls.Add(this.DisplaySizeTextBox1);
-            this.panel18.Location = new System.Drawing.Point(3, 778);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(543, 53);
-            this.panel18.TabIndex = 26;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(20, 17);
-            this.label17.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(211, 24);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Kích thước màn hình";
-            // 
-            // DisplaySizeTextBox1
-            // 
-            this.DisplaySizeTextBox1.BackColor = System.Drawing.Color.White;
-            this.DisplaySizeTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DisplaySizeTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DisplaySizeTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.DisplaySizeTextBox1.Name = "DisplaySizeTextBox1";
-            this.DisplaySizeTextBox1.ReadOnly = true;
-            this.DisplaySizeTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.DisplaySizeTextBox1.TabIndex = 1;
-            this.DisplaySizeTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.label18);
-            this.panel19.Controls.Add(this.DisplaySizeTextBox2);
-            this.panel19.Location = new System.Drawing.Point(552, 778);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(543, 53);
-            this.panel19.TabIndex = 27;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(20, 17);
-            this.label18.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(211, 24);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Kích thước màn hình";
-            // 
-            // DisplaySizeTextBox2
-            // 
-            this.DisplaySizeTextBox2.BackColor = System.Drawing.Color.White;
-            this.DisplaySizeTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DisplaySizeTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DisplaySizeTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.DisplaySizeTextBox2.Name = "DisplaySizeTextBox2";
-            this.DisplaySizeTextBox2.ReadOnly = true;
-            this.DisplaySizeTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.DisplaySizeTextBox2.TabIndex = 1;
-            this.DisplaySizeTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.label19);
-            this.panel20.Controls.Add(this.RefreshRateTextBox1);
-            this.panel20.Location = new System.Drawing.Point(3, 837);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(543, 53);
-            this.panel20.TabIndex = 28;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(20, 17);
-            this.label19.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(123, 24);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Tần số quét";
-            // 
-            // RefreshRateTextBox1
-            // 
-            this.RefreshRateTextBox1.BackColor = System.Drawing.Color.White;
-            this.RefreshRateTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RefreshRateTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RefreshRateTextBox1.Location = new System.Drawing.Point(244, 17);
-            this.RefreshRateTextBox1.Name = "RefreshRateTextBox1";
-            this.RefreshRateTextBox1.ReadOnly = true;
-            this.RefreshRateTextBox1.Size = new System.Drawing.Size(285, 23);
-            this.RefreshRateTextBox1.TabIndex = 1;
-            this.RefreshRateTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.label20);
-            this.panel21.Controls.Add(this.RefreshRateTextBox2);
-            this.panel21.Location = new System.Drawing.Point(552, 837);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(543, 53);
-            this.panel21.TabIndex = 29;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(20, 17);
-            this.label20.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(123, 24);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Tần số quét";
-            // 
-            // RefreshRateTextBox2
-            // 
-            this.RefreshRateTextBox2.BackColor = System.Drawing.Color.White;
-            this.RefreshRateTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RefreshRateTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RefreshRateTextBox2.Location = new System.Drawing.Point(244, 17);
-            this.RefreshRateTextBox2.Name = "RefreshRateTextBox2";
-            this.RefreshRateTextBox2.ReadOnly = true;
-            this.RefreshRateTextBox2.Size = new System.Drawing.Size(285, 23);
-            this.RefreshRateTextBox2.TabIndex = 1;
-            this.RefreshRateTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel22
-            // 
-            this.panel22.Controls.Add(this.label21);
-            this.panel22.Controls.Add(this.CameraResolutionTextBox1);
-            this.panel22.Location = new System.Drawing.Point(3, 896);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(543, 53);
-            this.panel22.TabIndex = 30;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.Color.DimGray;
-            this.label21.Location = new System.Drawing.Point(20, 17);
-            this.label21.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(246, 24);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Độ phân giải Camera sau";
-            // 
-            // CameraResolutionTextBox1
-            // 
-            this.CameraResolutionTextBox1.BackColor = System.Drawing.Color.White;
-            this.CameraResolutionTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CameraResolutionTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CameraResolutionTextBox1.Location = new System.Drawing.Point(302, 17);
-            this.CameraResolutionTextBox1.Name = "CameraResolutionTextBox1";
-            this.CameraResolutionTextBox1.ReadOnly = true;
-            this.CameraResolutionTextBox1.Size = new System.Drawing.Size(227, 23);
-            this.CameraResolutionTextBox1.TabIndex = 1;
-            this.CameraResolutionTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.label22);
-            this.panel23.Controls.Add(this.CameraResolutionTextBox2);
-            this.panel23.Location = new System.Drawing.Point(552, 896);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(543, 53);
-            this.panel23.TabIndex = 31;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(20, 17);
-            this.label22.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(246, 24);
-            this.label22.TabIndex = 2;
-            this.label22.Text = "Độ phân giải Camera sau";
-            // 
-            // CameraResolutionTextBox2
-            // 
-            this.CameraResolutionTextBox2.BackColor = System.Drawing.Color.White;
-            this.CameraResolutionTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CameraResolutionTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CameraResolutionTextBox2.Location = new System.Drawing.Point(302, 17);
-            this.CameraResolutionTextBox2.Name = "CameraResolutionTextBox2";
-            this.CameraResolutionTextBox2.ReadOnly = true;
-            this.CameraResolutionTextBox2.Size = new System.Drawing.Size(227, 23);
-            this.CameraResolutionTextBox2.TabIndex = 1;
-            this.CameraResolutionTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.label23);
-            this.panel24.Controls.Add(this.FrontCameraResolutionTextBox1);
-            this.panel24.Location = new System.Drawing.Point(3, 955);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(543, 53);
-            this.panel24.TabIndex = 32;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(20, 17);
-            this.label23.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(266, 24);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "Độ phân giải Camera trước";
-            // 
-            // FrontCameraResolutionTextBox1
-            // 
-            this.FrontCameraResolutionTextBox1.BackColor = System.Drawing.Color.White;
-            this.FrontCameraResolutionTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FrontCameraResolutionTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrontCameraResolutionTextBox1.Location = new System.Drawing.Point(302, 17);
-            this.FrontCameraResolutionTextBox1.Name = "FrontCameraResolutionTextBox1";
-            this.FrontCameraResolutionTextBox1.ReadOnly = true;
-            this.FrontCameraResolutionTextBox1.Size = new System.Drawing.Size(227, 23);
-            this.FrontCameraResolutionTextBox1.TabIndex = 1;
-            this.FrontCameraResolutionTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.label24);
-            this.panel25.Controls.Add(this.FrontCameraResolutionTextBox2);
-            this.panel25.Location = new System.Drawing.Point(552, 955);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(543, 53);
-            this.panel25.TabIndex = 33;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(20, 17);
-            this.label24.Margin = new System.Windows.Forms.Padding(20, 3, 3, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(266, 24);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Độ phân giải Camera trước";
-            // 
-            // FrontCameraResolutionTextBox2
-            // 
-            this.FrontCameraResolutionTextBox2.BackColor = System.Drawing.Color.White;
-            this.FrontCameraResolutionTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FrontCameraResolutionTextBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FrontCameraResolutionTextBox2.Location = new System.Drawing.Point(302, 17);
-            this.FrontCameraResolutionTextBox2.Name = "FrontCameraResolutionTextBox2";
-            this.FrontCameraResolutionTextBox2.ReadOnly = true;
-            this.FrontCameraResolutionTextBox2.Size = new System.Drawing.Size(227, 23);
-            this.FrontCameraResolutionTextBox2.TabIndex = 1;
-            this.FrontCameraResolutionTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.panel16.Size = new System.Drawing.Size(1255, 654);
+            this.panel16.TabIndex = 10;
             // 
             // PhoneCompare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.SearchPanel);
+            this.Controls.Add(this.panel16);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "PhoneCompare";
-            this.Size = new System.Drawing.Size(1247, 696);
+            this.Size = new System.Drawing.Size(1255, 654);
             this.Load += new System.EventHandler(this.PhoneCompare_Load);
             this.SearchPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1050,54 +828,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage1)).EndInit();
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PhoneImage2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.nameField.ResumeLayout(false);
-            this.nameField.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1105,84 +860,64 @@
         #endregion
 
         private System.Windows.Forms.Panel SearchPanel;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SearchCB2;
+        private System.Windows.Forms.ComboBox SearchCB1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox PhoneImage1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox PhoneImage2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox NameTextBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NameTextBox2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox BrandTextBox1;
+        private System.Windows.Forms.TextBox ChipsetTB2;
+        private System.Windows.Forms.TextBox ChipsetTB1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox BrandTextBox2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox ChipsetTextBox1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ChipsetTextBox2;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox NameTB2;
+        private System.Windows.Forms.TextBox NameTB1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox BrandTB2;
+        private System.Windows.Forms.TextBox BrandTB1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox RAMTB2;
+        private System.Windows.Forms.TextBox RAMTB1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox HasSDCardTB2;
+        private System.Windows.Forms.TextBox HasSDCardTB1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox RAMTextBox1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox RAMTextBox2;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox ROMTextBox1;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox ROMTextBox2;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox HasSDCardTextBox1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox ROMTB2;
+        private System.Windows.Forms.TextBox ROMTB1;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox HasSDCardTextBox2;
+        private System.Windows.Forms.TextBox BatteryTB2;
+        private System.Windows.Forms.TextBox BatteryTB1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox ResolutionTB2;
+        private System.Windows.Forms.TextBox ResolutionTB1;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox DisplaySizeTB2;
+        private System.Windows.Forms.TextBox DisplaySizeTB1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox RefreshRateTB2;
+        private System.Windows.Forms.TextBox RefreshRateTB1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox CameraResolutionTB2;
+        private System.Windows.Forms.TextBox CameraResolutionTB1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox BatteryTextBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox FrontCameraResolutionTB2;
+        private System.Windows.Forms.TextBox FrontCameraResolutionTB1;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox BatteryTextBox2;
-        private System.Windows.Forms.Panel nameField;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox ResolutionTextBox1;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox ResolutionTextBox2;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox DisplaySizeTextBox1;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox DisplaySizeTextBox2;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox RefreshRateTextBox1;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox RefreshRateTextBox2;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox CameraResolutionTextBox1;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox CameraResolutionTextBox2;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox FrontCameraResolutionTextBox1;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox FrontCameraResolutionTextBox2;
+        private System.Windows.Forms.Button SearchBtn2;
+        private System.Windows.Forms.Button SearchBtn1;
     }
 }
