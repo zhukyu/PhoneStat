@@ -9,7 +9,10 @@ namespace PhoneStat
     internal static class Program
     {
         internal static bool isLoggedIn = false;
-        internal static string conStr = @"Data Source=ZHUKYU;Initial Catalog=PhoneDb;Integrated Security=True";
+        internal static string conStr = @"Data Source=DESKTOP-AE7IM0R\SQLEXPRESS01;Initial Catalog=PhoneDb;Integrated Security=True";
+
+        //vinhh: Data Source=DESKTOP-AE7IM0R\SQLEXPRESS01;Initial Catalog=QLCH;Integrated Security=True
+        //huu: Data Source=ZHUKYU;Initial Catalog=PhoneDb;Integrated Security=True
         //bruh sao k gan vao day
         /// <summary>
         ///  The main entry point for the application.
