@@ -12,7 +12,7 @@ namespace PhoneStat
 {
     public partial class PhoneCompare : UserControl
     {
-        List<Phone> phones = null;
+        List<Phone> phones;
         public PhoneCompare()
         {
             InitializeComponent();
@@ -56,6 +56,19 @@ namespace PhoneStat
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NameTB1.Text = "";
+                BrandTB1.Text = "";
+                ChipsetTB1.Text = "";
+                RAMTB1.Text = "";
+                ROMTB1.Text = "";
+                HasSDCardTB1.Text = "";
+                BatteryTB1.Text = "";
+                ResolutionTB1.Text = "";
+                DisplaySizeTB1.Text = "";
+                RefreshRateTB1.Text = "";
+                CameraResolutionTB1.Text = "";
+                FrontCameraResolutionTB1.Text = "";
+                PhoneImage1.Image = Properties.Resources._65756;
             }
         }
 
@@ -86,6 +99,19 @@ namespace PhoneStat
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NameTB2.Text = "";
+                BrandTB2.Text = "";
+                ChipsetTB2.Text = "";
+                RAMTB2.Text = "";
+                ROMTB2.Text = "";
+                HasSDCardTB2.Text = "";
+                BatteryTB2.Text = "";
+                ResolutionTB2.Text = "";
+                DisplaySizeTB2.Text = "";
+                RefreshRateTB2.Text = "";
+                CameraResolutionTB2.Text = "";
+                FrontCameraResolutionTB2.Text = "";
+                PhoneImage2.Image = Properties.Resources._65756;
             }
         }
     }

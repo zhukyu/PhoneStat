@@ -50,8 +50,6 @@ namespace PhoneStat
             {
                 try
                 {
-                    //if (NameTextBox.Text == "" || BrandTextBox.Text == "" || ChipsetTextBox.Text == "" || RAMTextBox.Text == "" || ROMTextBox.Text == "" || HasSDCardTextBox.Text == "" || BatteryTextBox.Text == "" ||
-                    //    ResolutionTextBox.Text == "" || DisplaySizeTextBox.Text == "" || RefreshRateTextBox.Text == "" || CameraResolutionTextBox.Text == "" || FrontCameraResolutionTextBox.Text == "")
                     if(NameTextBox.Text == "")  
                         throw new Exception("Tên điện thoại không được để trống!");
                     Phone phone = new Phone(

@@ -42,5 +42,22 @@ namespace PhoneStat
             this.frontCameraResolution = frontCameraResolution;
             this.image = image;
         }
+        public Phone()
+        {
+            this.ID = -1;
+            this.name = "";
+            this.brand = "";
+            this.chipset = "";
+            this.RAM = "";
+            this.ROM = "";
+            this.hasSDCard = "";
+            this.battery = "";
+            this.resolution = "";
+            this.displaySize = "";
+            this.refreshRate = "";
+            this.cameraResolution = "";
+            this.frontCameraResolution = "";
+            this.image = null;
+        }
     }
 }

@@ -173,29 +173,22 @@ namespace PhoneStat
                     string temp = tbSearch.Text;
                     if (PhoneListLink.LinkVisited == true)
                     {
-                        MessageBox.Show("1");
                         PhoneList phoneList = new PhoneList(temp);
                         ContentPnl.Controls.Add(phoneList);
                     }
                     else if(PhoneEditLink.LinkVisited == true)
                     {
-                        MessageBox.Show("2");
                         PhoneEdit phoneList = new PhoneEdit(temp);
                         ContentPnl.Controls.Add(phoneList);
                     }
                     else
                     {
-                        MessageBox.Show("3");
                         PhoneList phoneList = new PhoneList(temp);
                         ContentPnl.Controls.Add(phoneList);
                     }
                         
                     
                     
-                }
-                else
-                {
-                    MessageBox.Show("Chưa điền");
                 }
             }
                                   

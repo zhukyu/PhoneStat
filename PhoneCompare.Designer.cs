@@ -231,7 +231,7 @@
             // PhoneImage2
             // 
             this.PhoneImage2.Image = global::PhoneStat.Properties.Resources._65756;
-            this.PhoneImage2.Location = new System.Drawing.Point(157, 12);
+            this.PhoneImage2.Location = new System.Drawing.Point(136, 12);
             this.PhoneImage2.Name = "PhoneImage2";
             this.PhoneImage2.Size = new System.Drawing.Size(232, 272);
             this.PhoneImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +240,7 @@
             // 
             // panel4
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel4.Controls.Add(this.NameTB2);
             this.panel4.Controls.Add(this.NameTB1);
             this.panel4.Controls.Add(this.label1);
@@ -251,7 +251,7 @@
             // 
             // NameTB2
             // 
-            this.NameTB2.BackColor = System.Drawing.Color.White;
+            this.NameTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.NameTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NameTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NameTB2.Location = new System.Drawing.Point(737, 18);
@@ -263,7 +263,7 @@
             // 
             // NameTB1
             // 
-            this.NameTB1.BackColor = System.Drawing.Color.White;
+            this.NameTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.NameTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NameTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NameTB1.Location = new System.Drawing.Point(228, 18);
@@ -287,7 +287,6 @@
             // 
             // panel5
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.BrandTB2);
             this.panel5.Controls.Add(this.BrandTB1);
@@ -334,7 +333,7 @@
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.ChipsetTB2);
             this.panel2.Controls.Add(this.ChipsetTB1);
@@ -357,7 +356,7 @@
             // 
             // ChipsetTB2
             // 
-            this.ChipsetTB2.BackColor = System.Drawing.Color.White;
+            this.ChipsetTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ChipsetTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ChipsetTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChipsetTB2.Location = new System.Drawing.Point(737, 18);
@@ -369,7 +368,7 @@
             // 
             // ChipsetTB1
             // 
-            this.ChipsetTB1.BackColor = System.Drawing.Color.White;
+            this.ChipsetTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ChipsetTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ChipsetTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChipsetTB1.Location = new System.Drawing.Point(228, 18);
@@ -381,7 +380,6 @@
             // 
             // panel6
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.RAMTB2);
             this.panel6.Controls.Add(this.RAMTB1);
@@ -428,7 +426,7 @@
             // 
             // panel8
             // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel8.Controls.Add(this.label2);
             this.panel8.Controls.Add(this.ROMTB2);
             this.panel8.Controls.Add(this.ROMTB1);
@@ -451,7 +449,7 @@
             // 
             // ROMTB2
             // 
-            this.ROMTB2.BackColor = System.Drawing.Color.White;
+            this.ROMTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ROMTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ROMTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ROMTB2.Location = new System.Drawing.Point(737, 18);
@@ -463,7 +461,7 @@
             // 
             // ROMTB1
             // 
-            this.ROMTB1.BackColor = System.Drawing.Color.White;
+            this.ROMTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ROMTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ROMTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ROMTB1.Location = new System.Drawing.Point(228, 18);
@@ -475,7 +473,6 @@
             // 
             // panel7
             // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.HasSDCardTB2);
             this.panel7.Controls.Add(this.HasSDCardTB1);
@@ -522,7 +519,7 @@
             // 
             // panel14
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel14.Controls.Add(this.label11);
             this.panel14.Controls.Add(this.BatteryTB2);
             this.panel14.Controls.Add(this.BatteryTB1);
@@ -545,7 +542,7 @@
             // 
             // BatteryTB2
             // 
-            this.BatteryTB2.BackColor = System.Drawing.Color.White;
+            this.BatteryTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BatteryTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BatteryTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BatteryTB2.Location = new System.Drawing.Point(737, 18);
@@ -557,7 +554,7 @@
             // 
             // BatteryTB1
             // 
-            this.BatteryTB1.BackColor = System.Drawing.Color.White;
+            this.BatteryTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BatteryTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BatteryTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BatteryTB1.Location = new System.Drawing.Point(228, 18);
@@ -569,7 +566,6 @@
             // 
             // panel12
             // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label10);
             this.panel12.Controls.Add(this.ResolutionTB2);
             this.panel12.Controls.Add(this.ResolutionTB1);
@@ -616,7 +612,7 @@
             // 
             // panel11
             // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel11.Controls.Add(this.label9);
             this.panel11.Controls.Add(this.DisplaySizeTB2);
             this.panel11.Controls.Add(this.DisplaySizeTB1);
@@ -639,7 +635,7 @@
             // 
             // DisplaySizeTB2
             // 
-            this.DisplaySizeTB2.BackColor = System.Drawing.Color.White;
+            this.DisplaySizeTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DisplaySizeTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DisplaySizeTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DisplaySizeTB2.Location = new System.Drawing.Point(737, 18);
@@ -651,7 +647,7 @@
             // 
             // DisplaySizeTB1
             // 
-            this.DisplaySizeTB1.BackColor = System.Drawing.Color.White;
+            this.DisplaySizeTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DisplaySizeTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DisplaySizeTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DisplaySizeTB1.Location = new System.Drawing.Point(228, 18);
@@ -663,7 +659,6 @@
             // 
             // panel10
             // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label8);
             this.panel10.Controls.Add(this.RefreshRateTB2);
             this.panel10.Controls.Add(this.RefreshRateTB1);
@@ -710,7 +705,7 @@
             // 
             // panel9
             // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel9.Controls.Add(this.label3);
             this.panel9.Controls.Add(this.CameraResolutionTB2);
             this.panel9.Controls.Add(this.CameraResolutionTB1);
@@ -733,7 +728,7 @@
             // 
             // CameraResolutionTB2
             // 
-            this.CameraResolutionTB2.BackColor = System.Drawing.Color.White;
+            this.CameraResolutionTB2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CameraResolutionTB2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CameraResolutionTB2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CameraResolutionTB2.Location = new System.Drawing.Point(737, 18);
@@ -745,7 +740,7 @@
             // 
             // CameraResolutionTB1
             // 
-            this.CameraResolutionTB1.BackColor = System.Drawing.Color.White;
+            this.CameraResolutionTB1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CameraResolutionTB1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CameraResolutionTB1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CameraResolutionTB1.Location = new System.Drawing.Point(228, 18);
@@ -757,7 +752,6 @@
             // 
             // panel15
             // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.label12);
             this.panel15.Controls.Add(this.FrontCameraResolutionTB2);
             this.panel15.Controls.Add(this.FrontCameraResolutionTB1);

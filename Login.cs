@@ -13,7 +13,7 @@ namespace PhoneStat
 {
     public partial class Login : Form
     {
-        SqlConnection conn = null;
+        SqlConnection? conn;
         string stringConnect = Program.conStr;
         public Login()
         {
@@ -53,6 +53,7 @@ namespace PhoneStat
                             MessageBox.Show("Đăng nhập thành công");
                             Program.userName = UserName.Text;
                             Program.isLoggedIn = true;
+                            this.Close();
                         }
                         else
                         {
@@ -73,14 +74,12 @@ namespace PhoneStat
             {
                 MessageBox.Show("Bạn chưa nhập đủ thông tin");
             }
-            
-
-            this.Close();
         }
 
         private void ResetBtn_Click(object sender, EventArgs e)
         {
-
+            UserName.Text = "";
+            Password.Text = "";
         }
 
         private void Exit_Click(object sender, EventArgs e)
